@@ -3,14 +3,28 @@
 
     <head>
         <meta charset="utf-8"/>
-        <title>[ Austin Clyde @ UC ]</title>
+        <title>[ Austin Clyde @ ANL ]</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+        <!-- Font Awesome Icons -->
         <link rel="stylesheet" href="css/font-awesome.min.css"/>
 
+        <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
 
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
         <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/menucollapse.js"></script>
         <script type="text/javascript" src="js/arrow78.js"></script>
@@ -19,8 +33,10 @@
 
     <body id="page-top" class="index">
 
+        <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -33,24 +49,37 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    <!-- <span><a href="#"><img border="0" width="170" src="images/csucy.png"/></a></span> -->
                 </div>
 
+                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                      <li class="page-scroll">
-                          <a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Publications</a>
-                      </li>
-
-                        <li class="page-scroll">
-                            <a target="_blank" href="https://github.com/aclyde11">GitHub</a>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Home<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li>
+                                <li><a href="bio.html">Biography</a></li>
+                                <li><a href="cv.html">CV (Web)</a></li>
+                                <li><a target="_blank" href="zeinalipour.pdf">CV (PDF)</a></li>
+                            </ul>
                         </li>
                         <li class="page-scroll">
-                          <li><a href="CV.pdf">CV</a></li>
+                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
                         </li>
-			<li class="page-scroll">
-                          <li><a href="teaching/index.html">Teaching</a></li>
+                        <li class="page-scroll">
+                            <a href="publications/">Publications</a>
                         </li>
-
+                        <li class="page-scroll">
+                            <a href="talks/">Talks</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-courses-content').show();" href="#courses">Courses</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-service-content').show();" href="#service">Service</a>
+                        </li>
                         <li class="page-scroll">
                             <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
                                 <span class="glyphicon glyphicon-search"></span>
@@ -68,6 +97,7 @@
         </nav>
 
         <section>
+            <!-- Place this tag where you want the search results to render -->
             <gcse:searchresults-only></gcse:searchresults-only>
                 </section>
 
@@ -76,44 +106,52 @@
             <div class="container">
                 <div align="left" class="col-md-3">
                     <a target="_blank" href="images/Clyde_Austin.jpg">
-                        <img id="mobile-img" src="images/Clyde_Austin.jpg" width="230" border="0" height="287" alt=""></a>
+                        <img id="mobile-img" src="images/Clyde_Austin.jpg" width="200" border="0" height="250" alt=""></a>
                 </div>
                 <div align="left" class="col-md-4">
                     <h2>Austin Clyde
+                        <h5><i>Ph.D., University of Chicago - (awaiting conferral Dec. 2022)</i></h5>
                     </h2>
-<h4><a href="https://www.anl.gov/profile/austin-robert-clyde"> Assistant Computational Scientist</a><br>
-                        <a href="https://www.anl.gov/dsl">Data Science and Learning Division</a><br>
-                        <a href="https://www.anl.gov">Argonne National Labratory</a><br>
-                        Email:
+
+                    <h4>Assistant Computational Scientist<br>
+                      <a href="https://www.anl.gov/dsl">Data Science and Learning Division</a><br>
+                      <a href="https://www.anl.gov">Argonne National Labratory</a><br>
+                        <!--
+                         P.O. Box 20537<br>
+                         1678 Nicosia, CYPRUS<br>-->
+                        Tel/Fax: <a href="tel:016302523738">630-252-3738</a>
+                        <br>Email:
                         <script language="JavaScript">
                             <!--
                             document.write("&nbsp;");
                             spiderjam('aclyde','anl.gov');
                             -->
                             </script><br/>
-                        <h4>Ph.D. Student<br>
-                        <a href="https://www.cs.uchicago.edu/">Dept. of Computer Science</a><br>
-                        <a href="https://www.uchicago.edu/">University of Chicago</a><br>
-                        Advisor: <a target="_blank" href="https://www.anl.gov/profile/rick-l-stevens">Professor Rick Stevens</a><br>
-                        Email:
-                        <script language="JavaScript">
-                            <!--
-                            document.write("&nbsp;");
-                            spiderjam('aclyde','uchicago.edu');
-                            -->
-                            </script><br/>
-           
+                       <!--.  Lab: <a target="_blank" href="https://dmsl.cs.ucy.ac.cy/">http://dmsl.cs.ucy.ac.cy/</a><br>
+                        Directions: <a target="_blank" href="https://goo.gl/FQCHMl">http://goo.gl/FQCHMl</a>-->
                     </h4>
+                    <h4><i>Expertise: AI for science, labelarge language models, social impact of AI &amp; science and technology studies (STS) </i> <a href="#intro" onclick="javascript:reset_menus();$('#tab-intro-content').show();" class="btn-primary btn-xs">&raquo;</a><br></h4>
 
-                    <h4> Profiles
-                      <a href="https://scholar.google.com/citations?user=uvm1jY0AAAAJ&hl=en&oi=ao">Google Scholar</a><br>
-                      <a href="https://ncihub.org/members/5718">NCI Hub</a><br>
-                    </h4>
-
-                    
                 </div>
 
+                <i class="twittertop" style="display:none;" id="t1">
+                    <div id="news" tyle="text-align: left"  class="col-md-5">&nbsp;
+                        <center><a class="twitter-timeline" href="https://twitter.com/austinclyde13" data-chrome="nofooter" data-widget-id="346662554203992065" data-width="900"
+                            data-height="300">Tweets
+                            by @austinclyde13</a>
+                        <script>!function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");</script></center>
+                    </div>
+                </i>
 
+                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
                 <b class="expandshow" style="display:none;" id="tab-1">
                     <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
                 </b>
@@ -138,122 +176,86 @@
                         <hr class="star-primary">
 
                         <p class="lead">
+            Austin Clyde is an Assistant Computer Scientist in the Data Science and Learning Division of Argonne National Laboratory, and a Pozen Family Center for Human Rights graduate lecturer, teaching a course on <a href="aihmrt.pdf">international human rights law and artificial intelligence</a>.  He holds a Ph.D. (waiting conferral in Dec 2022) and M.Sc. (2019) in Computer Science and an A.B. in Mathematics from the University of Chicago. Before his current appointment, he was a visiting research fellow at the Harvard Kennedy School’s Program on Science, Technology, and Society. His work has been recognized by the ACM Gordan Bell Prize (2020) and Department of Energy Secretary’s Honor Award for recognition in his involvement with the National Virtual Biotechnology Laboratory’s COVID-19 Response (2021).
                         </p>
-			<p>My research largely centers around the question:
-			  <h3><i>how can AI, computing, and algorithmic thinking improve science, society, and democracy?</i></h3>
-			<p>My work is both constructive and critical for drug discovery, ranging from identifying an inhibitor of the 3CL-main-protease of SARS-CoV-2 (see PDB: <a href="https://www.rcsb.org/structure/7LTJ">7LTJ</a>) to novel applications of language models for navigating chemical space formulated as a <a href="https://arxiv.org/pdf/2103.06867">lattice</a>. I am passionate about translating computing developments to novel scientific approaches (and vice-versa) to better science (and produce tangible scientific results).</p>
+                        <p>
+                        His primary research interests include <b>AI and HPC for science</b>, particularly the application of LLMs and surrogate models for drug discovery and biological deisgn, and <b> science and technology studies (STS) </b>, particularly understanding the relationship between rights, democracy, and AI.
 
-			<p>Recently, as an outgrowth of AI ethics, my work has asked the more powerful interpretive question:
-			</p>
-			<h3><i>how do we know when models are improving X, and how can we interpret them as decision-makers?</i></h3>
-			<p>In science, for example, my work has pointed out that this question is more complicated than many treat it. And in terms of algorithmic justice, we ought to turn towards political theory rather than single notions of ethics. I ask how democratic institutions can channel algorithmic developments through the public? Social integration, deliberation, and, more generally, feeling at home in the world are decreasing under the current regime of AI thought. I’m currently a vising fellow at the Harvard Kennedy School’s Science and Technology Program, working on these new questions.</p> 
-			
-			
+                        <br>
+                        <b> I am currently on the academic job market! Feel free to check out my applicaiton materials below: </b>
+                        <p><a href="bio.html" class="btn-sm btn-primary">Biography &raquo;</a>
+                        <a href="CV.pdf" class="btn-sm btn-primary">CV &raquo;</a>
+                        <a href="research.pdf" class="btn-sm btn-primary">Research statement &raquo;</a>
+                        <a href="teaching.pdf" class="btn-sm btn-primary">Teaching statement &raquo;</a>
+                        <a href="DEI.pdf" class="btn-sm btn-primary">DEI statement &raquo;</a>
                     </div>
 
                 </div>
             </div>
         </section>
 
+        <div class="twitterlow" style="display:none;" id="t1">
+            <!-- News Section -->
+            <section  name="news"  id="news">
+                <div class="container lead">
+                    <div style="text-align: left; margin-top:10px" class="col-md-12">
 
-        <!-- Research Section -->
-        <section  name="publications" id="publications">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                        <b class="noshow" style="display:none;" id="tab-2">
+                            <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-news-content').toggle();">News  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                        </b>
+                        <b class="allshow" style="display:none;" id="tab-news-content">
 
-                    <b class="noshow" style="display:none;" id="tab-3">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-                    <div class="allshow" style="display:none;" id="tab-publications-content">
-                        <hr class="star-primary">
+                            <hr class="star-primary">
 
-                        <h2>Selected Publications and Talks </h2>
-			<p><i>Please see my <a href="CV.pdf">CV</a> for the most up to date listing, thanks! </i></p>
-                        <h4>
-
-
-                        </h4>
-
-			
-                        <ul>
-                          <li><span class="label label-success">MANCEPT Workshop</span> <b>Austin Clyde</b>, “Created in our Likeness: Is Open-Source AI at Odds with Animal Rights?” MANCEPT Workshop “Politics, Animals, and Technology” organized by the Manchester Centre for Political Theory, September 2021. <font color="red">(accepted for talk)</font></li>
-
-                          <li><span class="label label-success">CAFCW20 @ SC'20</span> Scaffold-Induced Molecular Subgraphs (SIMSG): Effective Graph Sampling Methods for High-Throughput Computational Drug Discovery. <b>Clyde, A.</b>, Shah, Ashka, Zvyagin, M., Ramanathan, A., Stevens, R., Virtual 13 November 2020. <font color="red">(accepted for talk)</font></li>
-                          <li><span class="label label-success">Preprint</span>
-                                            <a target="_blank" href="https://www.biorxiv.org/content/biorxiv/early/2020/10/30/2020.10.29.339317.full.pdf">COVID Moonshot: Open Science Discovery of SARS-CoV-2 Main Protease Inhibitors by Combining Crowdsourcing, High-Throughput Experiments, Computational Simulations, and Machine Learning"</a>
-                                         The COVID Moonshot Consortium (authors here: <a target="_blank" href="https://tinyurl.com/y3r7redd"> https://tinyurl.com/y3r7redd </a>) 30 October 2020.</li>
-                                                                 </li>
-
-                       <li><span class="label label-success">Preprint</span>
-                                         <a target="_blank" href="https://arxiv.org/pdf/2010.10517">Scalable HPC and AI Infrastructure for COVID-19 Therapeutics"</a>
-                                         Hyungro Lee, Andre Merzky, Li Tan, Mikhail Titov, Matteo Turilli, Dario Alfe, Agastya Bhati, Alex Brace, <b>Austin Clyde</b>, Peter Coveney, Heng Ma, Arvind Ramanathan, Rick Stevens, Anda Trifan, Hubertus Van Dam, Shunzhou Wan, Sean Wilkinson, Shantenu Jha. 20 October 2020.</li>
-                                                              </li>
-                           <li><span class="label label-success">Preprint</span>
-                                             <a target="_blank" href="https://arxiv.org/pdf/2010.06574">IMPECCABLE: Integrated Modeling PipelinE for COVID Cure by Assessing Better LEads"</a>
-                                             Aymen Al Saadi, Dario Alfe, Yadu Babuji, Agastya Bhati, Ben Blaiszik, Thomas Brettin, Kyle Chard, Ryan Chard, Peter Coveney, Anda Trifan, Alex Brace, <b>Austin Clyde</b>, Ian Foster, Tom Gibbs, Shantenu Jha, Kristopher Keipert, Thorsten Kurth, Dieter Kranzlmüller, Hyungro Lee, Zhuozhao Li, Heng Ma, Andre Merzky, Gerald Mathias, Alexander Partin, Junqi Yin, Arvind Ramanathan, Ashka Shah, Abraham Stern, Rick Stevens, Li Tan, Mikhail Titov, Aristeidis Tsaris, Matteo Turilli, Huub Van Dam, Shunzhou Wan, David Wifling. 13 October 2020.</li>
-                                                                  </li>
-			  <li><span class="label label-success">Preprint</span> Babuji, Yadu, Ben Blaiszik, Tom Brettin, Kyle Chard, Ryan Chard, <b>Clyde, Austin</b>, Ian Foster et al. <a target="_blank" href="https://arxiv.org/pdf/2006.02431">"Targeting SARS-CoV-2 with AI-and HPC-enabled Lead Generation: A First Data Release."</a> arXiv preprint arXiv:2006.02431 (2020). </li>
-				   </li>
-			  <li><span class="label label-success">Preprint</span> <b>Clyde, Austin</b>, Xiaotian Duan, and Rick Stevens. <a target="_blank" href="https://arxiv.org/pdf/2006.01171.pdf">"Regression Enrichment Surfaces: a Simple Analysis Technique for Virtual Drug Screening Models."</a> arXiv preprint arXiv:2006.01171 (2020). </li>
-				   </li>
-			  <li><span class="label label-success">Preprint</span> <b>Clyde, Austin</b>, Tom Brettin, Alexander Partin, Maulik Shaulik, Hyunseung Yoo, Yvonne Evrard, Yitan Zhu, Fangfang Xia, and Rick Stevens. <a target="_blank" href="https://arxiv.org/pdf/2005.00095.pdf">"A Systematic Approach to Featurization for Cancer Drug Sensitivity Predictions with Deep Learning."</a> arXiv preprint arXiv:2005.00095 (2020). </li>
-				   </li>
-                          <li><span class="label label-success">CompBioMed EU</span>
-                            <a target="_blank" href="https://www.compbiomed.eu/webinar-on-how-ai-in-computational-medicine-is-leading-the-charge-in-covid-19-drug-discovery">Integrating High-Performance Simulations and Learning toward Improved Cancer Therapy."</a>
-                         <b>Clyde, Austin</b>, online. 30 March 2020. (Webinar Series)</li>
-                  		                           </li>
-                         <li><span class="label label-success">CompBioMed EU</span>
-                           <a target="_blank" href="https://www.youtube.com/watch?v=pbJvbBK-R54&feature=youtu.be">"Tiered BFE Estimation Workflow: What’s working and what’s not with the COVID-19 Effort."</a>
-                            <b>Clyde, Austin</b> 15 March 2020. (invited talk)</li>
-                                         		                           </li>
-                        <li><span class="label label-success"> MLSys'20</span>
-                          <a target="_blank" href="CHALLENGE20_paper_9.pdf">"Benchmarking Machine Learning Workloads in Structural Bioinformatics Applications."</a>
- Heng Ma, <b>Clyde, Austin</b>, Venkatram Vishwanath, Debsindhu Bhowmik, Arvind Ramanathan, Shantenu Jha. 4 March 2020. </li>
-
-			  <li><span class="label label-success">AACR</span> "Virtual Screening with Deep Learning using Cancer Cell Line Dose Response Data", Austin Clyde, Arvind Ramanathan, Rick Stevens. Advancing Precision Medicine Drug Development: Incorporation of Real-World Data and Other Novel Strategies, San Deigo CA. 10 January 2020. (poster)</li>
-		                           </li>
-
-			  <li><span class="label label-success">Janssen Pharmaceutica</span> "Accelerating Virtual Docking Screens with Deep Learning", Austin Clyde. 5 December 2019. (talk)</li>
-			                            </li>
-                            <li><span class="label label-success">CAFCW19 @ SC'19</span> <a target="_blank" href="https://sc19.supercomputing.org/proceedings/workshops/workshop_pages/ws_cafcw120.html">"Integrating High-Performance Simulations and Learning toward Improved Cancer Therapy"</a>, <b>Clyde, Austin</b>, Dave Wright, Katya Ahmed, John D. Chodera, John Karanicolas, Palani Kirubakaran, Hyungro Lee, Matteo Turilli, Shunzhou Wan,
-Peter Coveney, Shantenu Jha, Rick Stevens, Denver, CO, 17 November 2019. <font color="red">(accepted for talk)</font></li>
-                            </li>
-                            <li><span class="label label-success">NIH.AI ML for NGS Seminar</span> <a target="_blank" href="https://ncihub.org/groups/nihai/seminars/ml_for_ngs"> "Virtual Drug Screening with Deep Learning" </a>, <b>Clyde, Austin</b>, NIH.AI Workshop on Applications of Machine Learning for Next Generation Sequencing & Drug Data, Bethesdia, MD, 23 October 2019 <font color="black">(tutorial)</font></li>
-                            </li>
-                            <li><span class="label label-success">CompBioMed2 Kick-Off</span> <a target="_blank" href="https://drive.google.com/file/d/1Q04dqBBsgGx4Nu9Gxwkv6OHbkMRafTFD/view?usp=sharing"> "Computational Drug Discovery at Scale" </a>, <b>Clyde, Austin</b>, CompBioMed2 Kick-Off, Garching, DE, 21 October 2019 <font color="black">(talk)</font></li>
-                            </li>
-                            <li><span class="label label-success">ATOM Technical Meeting</span> <a target="_blank" href="https://drive.google.com/open?id=1jm-61YqDf8sZvoPZm1TIjWhcbNzGgds5"> "Molecule Generation, Search, and Optimization" </a>, <b>Clyde, Austin</b>, Atom 2019 Technical Meeting, Livermore, CA, 11 April 2019 <font color="black">(talk)</font></li>
-                            </li>
-
-                        </ul>
-                        </p>
+                            <h2>News</h2>
+                            <center><a class="twitter-timeline" href="https://twitter.com/dmslucy" data-chrome="nofooter" data-widget-id="346662554203992065">Tweets
+                                by @dmslcy</a>
+                            <script>!function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p + "://platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, "script", "twitter-wjs");
+                            </script>
+                            </center>
+                        </b>
                     </div>
                 </div>
-            </div>
-        </section>
-
+            </section>
+        </div>
 
         <!-- Courses Section -->
-        <section  name="courses" id="courses">
+        <section name="research" id="research">
             <div class="container lead">
                 <div style="text-align: left; margin-top:10px" class="col-md-12">
 
-                    <b class="noshow" style="display:none;" id="tab-5">
-                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-courses-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    <b class="noshow" style="display:none;" id="tab-4">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-systems-content').toggle();">Systems  <span class="glyphicon glyphicon-chevron-down"></span></button>
                     </b>
-                    <div class="allshow" style="display:none;" id="tab-courses-content">
+
+                    <div class="allshow" style="display:none;" id="tab-systems-content">
                         <hr class="star-primary">
-                        <h2>Teaching </h2>
+                        <h2>Research <a href="https:/github.com/aclyde11/" class="btn btn-primary">More &raquo;</a></h2>
                         <ul>
-<li><span class="label label-success">UChicago Instructor</span> Instructor for Introduction to Computer Science II (CMSC 152), Department of Computer Science, Univeristy of Chicago (Summer '21)</li>
-                          <li><span class="label label-success">CAAP Lecturer</span> Instructor for University of Chicago, Chicago Academic Achievement Program Computer Science Course  (Summer '20, '21)</li>
-			  <li><span class="label label-success">MPCS Practicum</span> Instructor RL for COVID-19 (Spring '20)</li>
-                            <li><span class="label label-success">CMSC 254</span> TA for Machine Learning in Medicine (Fall '19)</li>
+
+
+                            <p>
+                            (In progress)
+                            </p>
+                            <li><span class="label label-success">Regression Enrichment Surfaces</span> <a target="_blank" href="https://github.com/aclyde11/regression_enrichment_surface" target="_blank">RES</a> Python package and new methodology for analyzing deep learning models' performance in regards to virtual screening tasks. </li>
+                            <li><span class="label label-success">RLMM</span> <a target="_blank" href="https://github.com/aclyde11/RLMM" target="_blank">RLDock</a> OpenAI Gym environment for virtual structural docking using reinforcement learning. RLDock allows for docking flexible targets and combination with simulation workflows. </li>
+                            <li><span class="label label-success">CANDLE</span> <a target="_blank" href="https://github.com/ECP-CANDLE/Benchmarks" target="_blank">CANDLE</a> I worked on the NCI/DOE Pilot-1 cancer dose response prediction models. </li>
+
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
+
+
 
         <!-- Courses Section -->
         <section name="systems" id="systems">
@@ -284,22 +286,48 @@ Peter Coveney, Shantenu Jha, Rick Stevens, Denver, CO, 17 November 2019. <font c
         </section>
 
 
+        <!-- Courses Section -->
+        <section  name="courses" id="courses">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
 
-        <hr class="star-primary">
-        <footer>
-            <small>
-                <center>
-                    © 2019 | Austin Clyde. Credits: AR template
-                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
-                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
-                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
-                            https://github.com/dmsl/academic-responsive-template
-                        </a> ]
+                    <b class="noshow" style="display:none;" id="tab-5">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-courses-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-courses-content">
+                        <hr class="star-primary">
+                        <h2>Teaching </h2>
+                        <ul>
+<li><span class="label label-success">UChicago Instructor</span> Instructor for Introduction to Computer Science II (CMSC 152), Department of Computer Science, Univeristy of Chicago (Summer '21)</li>
+                          <li><span class="label label-success">CAAP Lecturer</span> Instructor for University of Chicago, Chicago Academic Achievement Program Computer Science Course  (Summer '20, '21)</li>
+			  <li><span class="label label-success">MPCS Practicum</span> Instructor RL for COVID-19 (Spring '20)</li>
+                            <li><span class="label label-success">CMSC 254</span> TA for Machine Learning in Medicine (Fall '19)</li>
+                        </ul>
                     </div>
-                </center>
-            </small>
-        </footer>
+                </div>
+            </div>
+        </section>
 
-    </body>
+
+
+
+        <!-- Home Section -->
+        <section name="links" id="links">
+          <hr class="star-primary">
+<footer>
+  <small>
+      <center>
+          © 2019 | Austin Clyde. Credits: AR template
+          <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+          <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+              <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                  https://github.com/dmsl/academic-responsive-template
+              </a> ]
+          </div>
+      </center>
+  </small>
+</footer>
+
+</body>
 
 </html>
