@@ -67,7 +67,7 @@
                             <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="publications/">Publications</a>
+                            <a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Publications</a>
                         </li>
                         <li class="page-scroll">
                             <a href="talks/">Talks</a>
@@ -185,6 +185,25 @@ Austin Clyde is an Assistant Computational Scientist in the Data Science and Lea
                         <a href="DEI.pdf" class="btn-sm btn-primary">DEI statement &raquo;</a>
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section name="publications" id="publications">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <hr class="star-primary">
+                        <h2>Publications <a href="publications/" class="btn btn-primary btn-sm">Full list &raquo;</a></h2>
+                        <p class="lead">A curated list of publications is embedded below so readers can browse without leaving the page.</p>
+                        <iframe title="Publications list" src="publications/" style="border:0; width:100%; height:600px;"></iframe>
+                    </div>
                 </div>
             </div>
         </section>
