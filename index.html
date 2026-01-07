@@ -1,364 +1,295 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Austin Clyde | AI for Science & STS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Computational scientist and lecturer focused on AI for science, explainability, and the social impact of AI.">
+  <meta name="keywords" content="Austin Clyde, AI for science, explainability, large language models, HPC, computational science, science and technology studies">
+  <meta name="author" content="Austin Clyde">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://austinclyde.com/">
 
-    <head>
-        <meta charset="utf-8"/>
-        <title>[ Austin Clyde @ ANL ]</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta property="og:title" content="Austin Clyde | AI for Science & STS">
+  <meta property="og:description" content="Computational scientist exploring AI for science, interpretability, and democratic impacts of AI.">
+  <meta property="og:url" content="https://austinclyde.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://austinclyde.com/images/Clyde_Austin.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@austinclyde13">
 
-        <!-- Font Awesome Icons -->
-        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/site.css">
 
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet"/>
-        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Austin Clyde",
+      "jobTitle": "Computational scientist and lecturer",
+      "url": "https://austinclyde.com/",
+      "image": "https://austinclyde.com/images/Clyde_Austin.jpg",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Argonne National Laboratory"
+      },
+      "sameAs": [
+        "https://twitter.com/austinclyde13",
+        "https://github.com/aclyde11"
+      ]
+    }
+  </script>
+</head>
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-         <script src="js/html5shiv.js"></script>
-         <script src="js/respond.min.js"></script>
-         <![endif]-->
+<body>
+  <header class="site-nav" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="#hero">Austin Clyde</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#focus">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
-        <script src="js/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/menucollapse.js"></script>
-        <script type="text/javascript" src="js/arrow78.js"></script>
-        <script type="text/javascript" src="js/custom.js"></script>
-    </head>
-
-    <body id="page-top" class="index">
-
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- <span><a href="#"><img border="0" width="170" src="images/csucy.png"/></a></span> -->
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                Home<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li>
-                                <li><a target="_blank" href="CV.pdf">CV (PDF)</a></li>
-                            </ul>
-                        </li>
-                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Publications</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a href="talks/">Talks</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-courses-content').show();" href="#courses">Courses</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-service-content').show();" href="#service">Service</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
-                                <span class="glyphicon glyphicon-search"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-
-                <!-- search box submenu -->
-                <div class="collapse" id="bs-example-navbar-collapse-2">
-                    <gcse:search></gcse:search>
-                        </div>
-
-            </div><!-- /.container-fluid -->
-        </nav>
-
-        <section>
-            <!-- Place this tag where you want the search results to render -->
-            <gcse:searchresults-only></gcse:searchresults-only>
-                </section>
-
-        <!-- Home Section -->
-        <section  name="home" id="home" style="margin-top:40px">
-            <div class="container">
-                <div align="left" class="col-md-3">
-                    <a target="_blank" href="images/Clyde_Austin.jpg">
-                        <img id="mobile-img" src="images/Clyde_Austin.jpg" width="200" border="0" height="250" alt=""></a>
-                </div>
-                <div align="left" class="col-md-4">
-                    <h2>Austin Clyde
-                        <!-- <h5><i>Ph.D., University of Chicago</i></h5> -->
-                    </h2>
-
-                    <h4>Previously: Assistant Computational Scientist<br>
-                      <a href="https://www.anl.gov/dsl">Data Science and Learning Division</a><br>
-                      <a href="https://www.anl.gov">Argonne National Labratory</a><br>
-                        <!--
-                         P.O. Box 20537<br>
-                         1678 Nicosia, CYPRUS<br>-->
-                        <br>Email:
-                        <script language="JavaScript">
-                            <!--
-                            document.write("&nbsp;");
-                            spiderjam('aclyde','anl.gov');
-                            -->
-                            </script><br/>
-                       <!--.  Lab: <a target="_blank" href="https://dmsl.cs.ucy.ac.cy/">http://dmsl.cs.ucy.ac.cy/</a><br>
-                        Directions: <a target="_blank" href="https://goo.gl/FQCHMl">http://goo.gl/FQCHMl</a>-->
-                    </h4>
-                    <h4><i>Expertise: AI for science, labelarge language models, social impact of AI &amp; science and technology studies (STS) </i> <a href="#intro" onclick="javascript:reset_menus();$('#tab-intro-content').show();" class="btn-primary btn-xs">&raquo;</a><br></h4>
-
-                </div>
-
-                <i class="twittertop" style="display:none;" id="t1">
-                    <div id="news" tyle="text-align: left"  class="col-md-5">&nbsp;
-                        <center><a class="twitter-timeline" href="https://twitter.com/austinclyde13" data-chrome="nofooter" data-widget-id="346662554203992065" data-width="900"
-                            data-height="300">Tweets
-                            by @austinclyde13</a>
-                        <script>!function (d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + "://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, "script", "twitter-wjs");</script></center>
-                    </div>
-                </i>
-
-                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
-                <b class="expandshow" style="display:none;" id="tab-1">
-                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
-                </b>
-                <b class="collapseshow" style="display:none;" id="tab-1">
-                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
-                </b>
-
-            </div>
-        </section>
-
-        <!-- Home Section -->
-        <section name="intro" id="intro">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-                    <!--<h2>Welcome!</h2>-->
-
-                    <b class="noshow" style="display:none;" id="tab-1">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-
-                    <div class="allshow" style="display:none;" id="tab-intro-content">
-                        <hr class="star-primary">
-
-                        <p class="lead">
-Austin Clyde is an Assistant Computational Scientist in the Data Science and Learning Division of Argonne National Laboratory. He holds a Ph.D. in computer science from the University of Chicago, where he continues to lecture in the Pozen Family Center for Human Rights, teaching courses on <a href= "aihmrt.pdf">international human rights law and artificial intelligence</a>. He is an expert in applying and developing artificial intelligence techniques to scientific problems, particularly those in high-performance computing, drug design, and large-language models. His current research explores interpretable AI for science systems and the role of interpretation in algorithmic decision systems. The Association for Computing Machinery (ACM) has awarded his work twice with Gordan Bell Special Prize in 2020 and 2022. His involvement with the National Virtual Biotechnology Laboratory's COVID-19 Response received a Department of Energy Secretary's Honor Award. Before his current appointment, he was a visiting research fellow at the Harvard Kennedy School's Program on Science, Technology, and Society.                         </p><p>
-                        His primary research interests include <b>AI and HPC for science</b>, particularly the application of LLMs and surrogate models for drug discovery and biological deisgn, and <b> science and technology studies (STS) </b>, particularly understanding the relationship between rights, democracy, and AI.
-
-                        <br>
-                        <b> I am currently on the academic job market! Feel free to check out my applicaiton materials below: </b>
-                        <p><a href="bio.html" class="btn-sm btn-primary">Biography &raquo;</a>
-                        <a href="CV.pdf" class="btn-sm btn-primary">CV &raquo;</a>
-                        <a href="research.pdf" class="btn-sm btn-primary">Research statement &raquo;</a>
-                        <a href="teaching.pdf" class="btn-sm btn-primary">Teaching statement &raquo;</a>
-                        <a href="DEI.pdf" class="btn-sm btn-primary">DEI statement &raquo;</a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Publications Section -->
-        <section name="publications" id="publications">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-
-                    <b class="noshow" style="display:none;" id="tab-3">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-
-                    <div class="allshow" style="display:none;" id="tab-publications-content">
-                        <hr class="star-primary">
-                        <h2>Publications <a href="publications/" class="btn btn-primary btn-sm">Full list &raquo;</a></h2>
-                        <p class="lead">A curated list of publications is embedded below so readers can browse without leaving the page.</p>
-                        <iframe title="Publications list" src="publications/" style="border:0; width:100%; height:600px;"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="twitterlow" style="display:none;" id="t1">
-            <!-- News Section -->
-            <section  name="news"  id="news">
-                <div class="container lead">
-                    <div style="text-align: left; margin-top:10px" class="col-md-12">
-
-                        <b class="noshow" style="display:none;" id="tab-2">
-                            <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-news-content').toggle();">News  <span class="glyphicon glyphicon-chevron-down"></span></button>
-                        </b>
-                        <b class="allshow" style="display:none;" id="tab-news-content">
-
-                            <hr class="star-primary">
-
-                            <h2>News</h2>
-                            <center><a class="twitter-timeline" href="https://twitter.com/austinclyde13" data-chrome="nofooter" data-widget-id="346662554203992065">Tweets
-                                by @austinclyde13</a>
-                            <script>!function (d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                                if (!d.getElementById(id)) {
-                                    js = d.createElement(s);
-                                    js.id = id;
-                                    js.src = p + "://platform.twitter.com/widgets.js";
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                }
-                            }(document, "script", "twitter-wjs");
-                            </script>
-                            </center>
-                        </b>
-                    </div>
-                </div>
-            </section>
+  <main>
+    <section id="hero" class="section hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <p class="eyebrow">AI for science · Interpretation · Civic impact</p>
+        <h1 id="hero-title">Austin Clyde</h1>
+        <p class="lede">
+          Computational scientist and lecturer shaping AI for science, large-language-model workflows, and the civic life of algorithms.
+          Previously Assistant Computational Scientist in the <a href="https://www.anl.gov/dsl" target="_blank" rel="noreferrer noopener">Data Science and Learning Division</a> at Argonne National Laboratory; lecturer at the University of Chicago.
+        </p>
+        <div class="pill-group">
+          <span class="pill">AI for science</span>
+          <span class="pill">Large language models</span>
+          <span class="pill">Explainability & calibration</span>
+          <span class="pill">Science & technology studies</span>
         </div>
-
-        <!-- Courses Section -->
-        <section name="research" id="research">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-
-                    <b class="noshow" style="display:none;" id="tab-4">
-                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-systems-content').toggle();">Systems  <span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-
-                    <div class="allshow" style="display:none;" id="tab-systems-content">
-                        <hr class="star-primary">
-                        <h2>Research></h2>
-                        <ul>
-                            <b>My research interest is developing interpretable AI for science systems and analyzing the role of interpretation and power in algorithmic decision systems.</b> My research is both quantitative and qualitative, working with areas of AI, drug design, synthetic biology, and science and technology studies.
-
-                            I am interested in how computer scientists can develop more flexible AI and HPC systems for doing science. For example, in my dissertation work on AI for drug discovery, I argue that current AI approaches in structure-based drug design fail to align with scientific theories and be explainable in their terms. This is a problem because it leaves much drug discovery opportunity on the table as <a href="https://www.sciencedirect.com/science/article/pii/S2666389922000198">interdisciplinary collaboration is key</a>. In response to this observation, I developed novel workflows which overcome the scaling limitations that current approaches will have and are interpretable as embedded and embodying current heuristics and theoretical concepts in medicinal chemistry. In a sense, this scientific work is an exercise in translation between disciplines.
-                            <p>                            <p>
-
-                            Witnessing how practicing interpretive flexibility required a deep understanding of theoretical practices in AI and drug design, my research aims to take this on as method. I am interested in how normative and social analytics such as explainability, calibration, or scrutability intersect with other sociotechnical systems such as <a href="https://techpolicy.press/human-in-the-loop-systems-are-no-panacea-for-ai-accountability/">law</a>, <a href="https://techpolicy.press/algorithmic-systems-designed-to-reduce-polarization-could-hurt-democracy-not-help-it/">democratic theory</a>, and <a href="aihmrt.pdf">human rights</a>. Considering this, I aim to develop novel techniques which advance our understanding of explainability through sample-based explainability, extend capabilities of calibrating models to data, and transform the underlying glue between science and AI research’s goals—large language models and surrogate or edge models.
-
-                            <h3> Explainability </h3>
-                            Explainability is essential to the current regulatory landscape of AI, human-computer interaction, and accelerating scientific discovery with AI and HPC; however, recent explainability research focuses on models as decision makers—i.e., explainability is theorized as the relationship between the features of samples—how can models explain themselves when inferring? While these methods help ascertain the model’s ‘mental schema,’ there is another tone of explainability that asks what explains the model acting this way instead of another, raising questions about the data science process itself. Sample-based explainability understands data science as a causal process that captures data and quantifies it in some way, selects specific data versus others to use in training, and uses an algorithm to construct a computational model which can produce inferences. In this research area, I ask how intervention in the data science process and the choices made among alternatives lead to a particular model with particular behaviors rather than another. Besides its impact on regulation, discussed later in the democratic content, this method of explainability can provide quantitative answers to essential questions in active learning and scientific practice, such as: what is the benefit of adding more samples with specific characteristics, what is the impact of experimental noise in the data on specific predictions, how do certain data points provide evidence for particular predictions, and how could new instrumentation or experiments improve model performance? This can be seen in the context of autonomous discovery initiatives, for example, where active learning and explainability may be interrelated. This work will focus on my work in cancer-drug response prediction, as obtaining new experimental data from animal models or patients is expensive, data is extremely noisy across different models about a real patient response, and explainability is imperative for clinical translation.
-
-                            <h3> Scrutinity </h3>
-                            How can models be scrutinized as trustworthy? What is suitable due diligence? As LLMs and other media-generating models such as DALL-E continue to surprise operators with their seemingly oracle-like behavior, I fear those in charge of automated decision systems are not equipped to ‘get to know’ models and scrutinize their level of groundedness is a present-day reality. Even in AI for science initiatives such as designing autonomous laboratories, LLMs have immense potential to fill current capability gaps. Yet, LLMs’ lack of structure or fact grounding presents a significant challenge in science. Future work: I will research the capacity of LLMs for implicitly and explicitly storing knowledge graphs, treating LLMs as a kind of novel database technology.
-
-                            <h3> Calibration </h3>
-                            Currently, few automated calibration techniques exist for large-scale AI projects, and this divide is only deepening with the scale of models being deployed across diverse industries and science domains.  I focus on developing automatic calibration for large-scale hierarchical AI workflows with existing disparate data sources as well as in cases where experimental data can be acquired. Significant progress has been made with workflows such as IMPECCABLE;  however, techniques to auto-calibrate these workflows based on available data, experiments, and/or field observables are lacking. Future work: I will develop an HPC framework for the automatic calibration of large workflows that leverage information across the entire campaign and its various scales and optimally discover new data collection(s), which will efficiently improve the quality of the model calibration.
-
-                            <p>
-                            Furthermore, I believe great effort is needed to advance calibration techniques of LLMs. I envision a radically different AI for science paradigm than current foundational model proposals. Small edge and emended AI systems are increasingly used due to their efficiency, ease of use. Traditional scientists are increasingly drawn to these simple models and using them in their work. These types of models are the most likely models to be deployed to scientific instruments. At the same time, great advances in large foundational language models have drawn renewed excitement around the performance gains in many tasks due to the synergistic injection of more and more diverse data.
-
-                            <h3> Law, Democracy, and Human Rights </h3>
-                            Courts, regulators, and politicians are increasingly relying on computer models and simulations for evidence and reasoning, developing regulation around AI, and grappling with the application of traditional rights in the face of technological artifacts. The ability to engage in communication and collective understanding of policies, form political opinions, and even come to share a unified scientific lifeworld are fundamental to democracy and a basic human interest. How can we afford the same transparency, understanding, and fundamental rights fostered through civic engagement in an increasingly technocratic democracy? In conjugation with developing novel methods for increasing our interpretive flexibility with models through sample-based explainability, calibration, and new methods for scrutiny, I aim to continue scholarship on understanding how interpretations of science and computational follow commitments in law, democracy, and rights. For example, the two modes of explainability I outline coreespond to modes of democratic integration: epistemic and social explainability.  Epistemic explainability refers to the traditional X-AI program where the goal is to relate the decision structure of a particular model with a scientific and natural language theory. An explanation might provide a counterfactual (‘had expression of gene X increased, the phenotype prediction would have been Y’) while a global explanation might present generalized rules to summarize the model (‘gene X when expressed with gene Y is phenotype Z'’). Social explainability refers to the ways in which different collectives, regulators, and courts come to understand and interpret the system both epistemically and as embedded political, social, and corporate institutions. This distinction is important since social explainability is a pre-condition for democratic discourse in civil society, and it is being realized in law (with a distinction between GDPR Recital 71’s call for epistemic explainability and European Union’s AI Act art. 13 call for users’ ability to “interpret” models). Furthermore, the European Union’s AI Liability Directive proposes a presumption of causality when fault has been established with an AI system, and second providing a right to access evidence of a system. By focusing on sample explainability, interpretive flexibility is allowed outside of mere feature attribution. Questions such as the inclusion of some data over other data can be causally understood, allowing open interpretation of those data in social contexts, and quantitively illustrating the impact of those choices. With this charge, I plan on taking on the following projects in the short term: a review of case law focused on the question how is expertise with respect to models used, how intentions are understood in models (as this question arose the recent oral arguments of Merrill v. Milligan), who authorizes what explanations about it, and what might expand the scope of explanation be? Of course, one answer will be provided through technically developing one as above.  Second, I will continue research into the kinds of civic epistemologies exercised when it comes to understanding algorithms. Third, I aim to undertake analyzing the parallels between judicial interpretation and interpterion of algorithms to ascertain what commitments follow from ways of knowing algorithms.
-                            <p>
-                              <p>
-
-                            While many AI ethics programs focus on explainability and virtues experts should follow in their practice, few research programs treat the idea with STS reflexivity: how do these technologies open new means for citizens to participate in world-making, and how can citizens drive the kinds of technological innovation needed in their local contexts? My research into AI civics is twofold: (1) how do we develop the kinds of public institutions which afford citizens the same access to decision-making that traditional intuitions have in a world of AI? And (2) how do we foster through public education, civic engagement, and university education new skill for an informed citizenry in a technological world. I will articulate AI as an opportunity for empowerment through epistemic justice, where citizens are able to confirm their suspicions and bring new calculability to what oppression is. My work touches human rights law and philosophy, for example, considering the right to the progressive realization of equal access to science and technology.
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- Courses Section -->
-        <section name="systems" id="systems">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-
-                    <b class="noshow" style="display:none;" id="tab-4">
-                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-systems-content').toggle();">Systems  <span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-
-                    <div class="allshow" style="display:none;" id="tab-systems-content">
-                        <hr class="star-primary">
-                        <h2>Current Projects <a href="https:/github.com/aclyde11/" class="btn btn-primary">More &raquo;</a></h2>
-                        <ul>
-
-
-                            <p>
-                            (In progress)
-                            </p>
-                            <li><span class="label label-success">Regression Enrichment Surfaces</span> <a target="_blank" href="https://github.com/aclyde11/regression_enrichment_surface" target="_blank">RES</a> Python package and new methodology for analyzing deep learning models' performance in regards to virtual screening tasks. </li>
-                            <li><span class="label label-success">RLMM</span> <a target="_blank" href="https://github.com/aclyde11/RLMM" target="_blank">RLDock</a> OpenAI Gym environment for virtual structural docking using reinforcement learning. RLDock allows for docking flexible targets and combination with simulation workflows. </li>
-                            <li><span class="label label-success">CANDLE</span> <a target="_blank" href="https://github.com/ECP-CANDLE/Benchmarks" target="_blank">CANDLE</a> I worked on the NCI/DOE Pilot-1 cancer dose response prediction models. </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Courses Section -->
-        <section  name="courses" id="courses">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-
-                    <b class="noshow" style="display:none;" id="tab-5">
-                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-courses-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-                    <div class="allshow" style="display:none;" id="tab-courses-content">
-                        <hr class="star-primary">
-                        <h2>Teaching </h2>
-                        <ul>
-<li><span class="label label-success">UChicago Instructor</span> Instructor for Introduction to Computer Science II (CMSC 152), Department of Computer Science, Univeristy of Chicago (Summer '21)</li>
-                          <li><span class="label label-success">CAAP Lecturer</span> Instructor for University of Chicago, Chicago Academic Achievement Program Computer Science Course  (Summer '20, '21)</li>
-			  <li><span class="label label-success">MPCS Practicum</span> Instructor RL for COVID-19 (Spring '20)</li>
-                            <li><span class="label label-success">CMSC 254</span> TA for Machine Learning in Medicine (Fall '19)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-        <!-- Home Section -->
-        <section name="links" id="links">
-          <hr class="star-primary">
-<footer>
-  <small>
-      <center>
-          © 2019 | Austin Clyde. Credits: AR template
-          <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
-          <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
-              <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
-                  https://github.com/dmsl/academic-responsive-template
-              </a> ]
+        <div class="cta-group">
+          <a class="btn primary" href="CV.pdf">Download CV</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+          <a class="btn subtle" href="publications/" target="_blank" rel="noreferrer noopener">Browse publications</a>
+        </div>
+        <div class="meta-links">
+          <a href="https://twitter.com/austinclyde13" target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter"></i> @austinclyde13</a>
+          <a href="https://github.com/aclyde11" target="_blank" rel="noreferrer noopener"><i class="fa fa-github"></i> aclyde11</a>
+          <a href="talks/" target="_blank" rel="noreferrer noopener"><i class="fa fa-microphone"></i> Talks</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="portrait-wrap">
+          <img class="portrait" src="images/Clyde_Austin.jpg" alt="Portrait of Austin Clyde">
+          <div class="badge">AC</div>
+        </div>
+        <div class="card quick-facts">
+          <h3>Application materials</h3>
+          <div class="chip-row">
+            <a class="chip" href="CV.pdf">CV</a>
+            <a class="chip" href="research.pdf">Research</a>
+            <a class="chip" href="teaching.pdf">Teaching</a>
+            <a class="chip" href="DEI.pdf">DEI</a>
           </div>
-      </center>
-  </small>
-</footer>
+          <p>Also teaching international human rights law & AI in the Pozen Family Center for Human Rights.</p>
+        </div>
+      </div>
+    </section>
 
+    <section id="about" class="section narrow" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>
+        I design interpretable AI for high-performance scientific systems and study how algorithmic decisions reshape civic life.
+        My work spans large language models for drug discovery and biological design, AI calibration, and the democratic and human-rights implications of automated systems.
+        I am twice recognized by ACM with the Gordon Bell Special Prize (2020, 2022) and contributed to the National Virtual Biotechnology Laboratory's COVID-19 response, honored with a U.S. Department of Energy Secretary's Award.
+      </p>
+      <div class="highlight-grid">
+        <div class="card">
+          <h3>Teaching</h3>
+          <p>Lecturer at the University of Chicago, teaching computer science and AI & human rights.</p>
+        </div>
+        <div class="card">
+          <h3>Focus</h3>
+          <p>Explainability, calibration, and scrutability across AI workflows — built for scientists and public institutions.</p>
+        </div>
+        <div class="card">
+          <h3>Methods</h3>
+          <p>Blend quantitative modeling (HPC, LLMs, simulation) with qualitative research in science & technology studies.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus" class="section" aria-labelledby="focus-title">
+      <div class="section-heading">
+        <h2 id="focus-title">Research focus</h2>
+        <p>How we build and interpret AI for science — and how society interprets AI in return.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Explainability</h3>
+          <p>Sample-based explainability for scientific AI: linking model behavior to data choices, experimental noise, and interdisciplinary collaboration.</p>
+        </div>
+        <div class="card">
+          <h3>Scrutiny</h3>
+          <p>Practical techniques to interrogate LLMs and edge models, treating them as knowledge systems that must be audited before deployment.</p>
+        </div>
+        <div class="card">
+          <h3>Calibration</h3>
+          <p>Automatic calibration for large-scale AI workflows and scientific campaigns, including resilient calibration for LLMs.</p>
+        </div>
+        <div class="card">
+          <h3>Law, Democracy & Rights</h3>
+          <p>Research on civic epistemologies, legal interpretation of AI systems, and how transparency standards shape democratic participation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <h2 id="projects-title">Current projects</h2>
+        <p>Making AI interpretable, efficient, and ready for scientific discovery.</p>
+      </div>
+      <div class="list-cards">
+        <article class="list-card">
+          <div>
+            <div class="label success">Regression Enrichment Surfaces</div>
+            <h3><a href="https://github.com/aclyde11/regression_enrichment_surface" target="_blank" rel="noreferrer noopener">RES</a></h3>
+            <p>Python package and methodology for analyzing deep learning models in virtual screening tasks.</p>
+          </div>
+        </article>
+        <article class="list-card">
+          <div>
+            <div class="label success">RLDock</div>
+            <h3><a href="https://github.com/aclyde11/RLMM" target="_blank" rel="noreferrer noopener">RL-driven docking</a></h3>
+            <p>OpenAI Gym environment enabling reinforcement learning for flexible structural docking.</p>
+          </div>
+        </article>
+        <article class="list-card">
+          <div>
+            <div class="label success">CANDLE</div>
+            <h3><a href="https://github.com/ECP-CANDLE/Benchmarks" target="_blank" rel="noreferrer noopener">Cancer response prediction</a></h3>
+            <p>NCI/DOE Pilot-1 dose response models for precision oncology and scalable AI benchmarking.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section" aria-labelledby="publications-title">
+      <div class="section-heading">
+        <h2 id="publications-title">Publications</h2>
+        <p>Curated publication list without leaving the page.</p>
+      </div>
+      <div class="iframe-wrap">
+        <iframe title="Publications list" src="publications/index.html" loading="lazy"></iframe>
+      </div>
+      <div class="cta-inline">
+        <a class="btn ghost" href="publications/" target="_blank" rel="noreferrer noopener">Open full publications site</a>
+      </div>
+    </section>
+
+    <section id="teaching" class="section" aria-labelledby="teaching-title">
+      <div class="section-heading">
+        <h2 id="teaching-title">Teaching</h2>
+        <p>Helping students build rigorous, reflective approaches to computing.</p>
+      </div>
+      <ul class="timeline">
+        <li><span class="label success">UChicago Instructor</span> Introduction to Computer Science II (CMSC 152), Department of Computer Science, University of Chicago (Summer '21)</li>
+        <li><span class="label success">CAAP Lecturer</span> Chicago Academic Achievement Program Computer Science Course (Summer '20, '21)</li>
+        <li><span class="label success">MPCS Practicum</span> Reinforcement Learning for COVID-19 (Spring '20)</li>
+        <li><span class="label success">CMSC 254</span> TA for Machine Learning in Medicine (Fall '19)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section narrow" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>Interested in collaborations on AI for science, interpretability, or the civic life of algorithms? Reach out.</p>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Email</h3>
+          <p id="email"></p>
+        </div>
+        <div class="card">
+          <h3>Current city</h3>
+          <p>Chicago, IL</p>
+          <p><a href="https://austinclyde.com">austinclyde.com</a></p>
+        </div>
+        <div class="card">
+          <h3>Social</h3>
+          <p><a href="https://twitter.com/austinclyde13" target="_blank" rel="noreferrer noopener">Twitter</a> · <a href="https://github.com/aclyde11" target="_blank" rel="noreferrer noopener">GitHub</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2024 Austin Clyde. Built to be fast, accessible, and search-friendly.</p>
+      <a href="#top" class="back-to-top">Back to top</a>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var nav = document.querySelector('.site-nav');
+      var toggle = document.getElementById('menu-toggle');
+      var navLinks = document.querySelectorAll('.nav-links a');
+
+      if (toggle && nav) {
+        toggle.addEventListener('click', function() {
+          var isOpen = nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', isOpen);
+        });
+      }
+
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          if (nav) {
+            nav.classList.remove('open');
+          }
+          if (toggle) {
+            toggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+
+      var emailEl = document.getElementById('email');
+      if (emailEl) {
+        var user = 'aclyde';
+        var domain = 'anl.gov';
+        emailEl.innerHTML = '<a href="mailto:' + user + '@' + domain + '">' + user + '@' + domain + '</a>';
+      }
+
+      var sections = document.querySelectorAll('section[id]');
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var activeId = '#' + entry.target.id;
+            navLinks.forEach(function(link) {
+              if (link.getAttribute('href') === activeId) {
+                link.classList.add('active');
+              } else {
+                link.classList.remove('active');
+              }
+            });
+          }
+        });
+      }, { rootMargin: '-55% 0px -35% 0px', threshold: 0 });
+
+      sections.forEach(function(section) {
+        observer.observe(section);
+      });
+    })();
+  </script>
 </body>
-
 </html>
