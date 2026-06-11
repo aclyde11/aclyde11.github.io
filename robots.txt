@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://austinclyde.com/sitemap.xml

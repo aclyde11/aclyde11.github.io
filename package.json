@@ -1,0 +1,12 @@
+{
+  "name": "austinclyde.com",
+  "version": "2026.06.11",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync:publications": "node scripts/sync-publications.mjs",
+    "check:publications": "node scripts/validate-publications.mjs",
+    "check:publications:live": "node scripts/sync-publications.mjs --check",
+    "check": "npm run check:publications"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-06-11T18:31:10.027Z",
+  "fetchedOpenAlexWorks": 55,
+  "curatedRecords": 45,
+  "duplicatesCollapsed": [
+    {
+      "kept": "10.48550/arxiv.2109.05012",
+      "dropped": "10.48550/arxiv.2109.05012",
+      "title": "Scaffold-Induced Molecular Graph (SIMG): Effective Graph Sampling Methods for High-Throughput Computational Drug Discovery"
+    },
+    {
+      "kept": "10.1145/3472456.3473524",
+      "dropped": "w3202628326",
+      "title": "IMPECCABLE: Integrated Modeling PipelinE for COVID Cure by Assessing Better LEads"
+    },
+    {
+      "kept": "10.1098/rsfs.2021.0018",
+      "dropped": "10.1098/rsfs.2021.0018",
+      "title": "Pandemic Drugs at Pandemic Speed: Infrastructure for Accelerating COVID-19 Drug Discovery with Hybrid Machine Learning- and Physics-based Simulations on High Performance Computers"
+    },
+    {
+      "kept": "10.1021/acs.jcim.1c00851",
+      "dropped": "10.6084/m9.figshare.13641101",
+      "title": "High Throughput Virtual Screening and Validation of a SARS-CoV-2 Main Protease Non-Covalent Inhibitor"
+    },
+    {
+      "kept": "10.1145/3468267.3470573",
+      "dropped": "10.48550/arxiv.2010.10517",
+      "title": "Scalable HPC and AI Infrastructure for COVID-19 Therapeutics"
+    },
+    {
+      "kept": "10.1145/3472456.3473524",
+      "dropped": "10.48550/arxiv.2010.06574",
+      "title": "IMPECCABLE: Integrated Modeling PipelinE for COVID Cure by Assessing Better LEads"
+    }
+  ],
+  "recordsMissingYear": [],
+  "recordsMissingUrl": [],
+  "recordsMissingSource": []
+}

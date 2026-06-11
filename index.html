@@ -2,294 +2,296 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Austin Clyde | AI for Science & STS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Computational scientist and lecturer focused on AI for science, explainability, and the social impact of AI.">
-  <meta name="keywords" content="Austin Clyde, AI for science, explainability, large language models, HPC, computational science, science and technology studies">
+  <title>Austin Clyde | High-performance AI systems, scientific computing, and accountable AI</title>
+  <meta name="description" content="Austin Clyde works across C++ performance engineering, high-performance computing, AI systems, AI for science, and accountable algorithmic systems.">
+  <meta name="keywords" content="Austin Clyde, AI systems, C++, high-performance computing, AI for science, drug discovery, interpretable AI, science and technology studies">
   <meta name="author" content="Austin Clyde">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://austinclyde.com/">
 
-  <meta property="og:title" content="Austin Clyde | AI for Science & STS">
-  <meta property="og:description" content="Computational scientist exploring AI for science, interpretability, and democratic impacts of AI.">
+  <meta property="og:title" content="Austin Clyde | High-performance AI systems">
+  <meta property="og:description" content="C++ performance engineering, HPC, AI systems, AI for science, and accountable algorithmic systems.">
   <meta property="og:url" content="https://austinclyde.com/">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="profile">
   <meta property="og:image" content="https://austinclyde.com/images/Clyde_Austin.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@austinclyde13">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Austin Clyde",
-      "jobTitle": "Computational scientist and lecturer",
-      "url": "https://austinclyde.com/",
-      "image": "https://austinclyde.com/images/Clyde_Austin.jpg",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "Argonne National Laboratory"
-      },
-      "sameAs": [
-        "https://twitter.com/austinclyde13",
-        "https://github.com/aclyde11"
-      ]
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Austin Clyde",
+        "url": "https://austinclyde.com/",
+        "image": "https://austinclyde.com/images/Clyde_Austin.jpg",
+        "jobTitle": "Computer scientist",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Chicago"
+        },
+        "sameAs": [
+          "https://github.com/aclyde11",
+          "https://orcid.org/0000-0002-3697-7070",
+          "https://openalex.org/A5088879250",
+          "https://twitter.com/austinclyde13"
+        ],
+        "knowsAbout": [
+          "AI systems",
+          "C++ performance engineering",
+          "High-performance computing",
+          "AI for science",
+          "Computational drug discovery",
+          "Interpretable AI",
+          "Science and technology studies"
+        ]
+      }
     }
   </script>
 </head>
-
 <body>
-  <header class="site-nav" id="top">
-    <div class="nav-inner">
-      <a class="brand" href="#hero">Austin Clyde</a>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#focus">Research</a>
-        <a href="#projects">Projects</a>
+  <header class="site-header">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="nav-shell">
+      <a class="brand" href="#top">Austin Clyde</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
         <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
+        <a href="cv.html">CV</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section id="hero" class="section hero" aria-labelledby="hero-title">
-      <div class="hero-text">
-        <p class="eyebrow">AI for science · Interpretation · Civic impact</p>
-        <h1 id="hero-title">Austin Clyde</h1>
-        <p class="lede">
-          Computational scientist and lecturer shaping AI for science, large-language-model workflows, and the civic life of algorithms.
-          Previously Assistant Computational Scientist in the <a href="https://www.anl.gov/dsl" target="_blank" rel="noreferrer noopener">Data Science and Learning Division</a> at Argonne National Laboratory; lecturer at the University of Chicago.
-        </p>
-        <div class="pill-group">
-          <span class="pill">AI for science</span>
-          <span class="pill">Large language models</span>
-          <span class="pill">Explainability & calibration</span>
-          <span class="pill">Science & technology studies</span>
+  <main id="main">
+    <section id="top" class="hero-section">
+      <div class="hero-copy">
+        <p class="hero-kicker">Computer scientist / systems builder</p>
+        <h1>High-performance AI systems, scientific computing, and accountable AI.</h1>
+        <p class="lead">I build and study computational systems where performance, scientific validity, and public accountability all matter: C++ infrastructure, HPC workflows, AI for science, molecular modeling, and interpretation of algorithmic systems.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Selected work</a>
+          <a class="button" href="publications/">Publication archive</a>
+          <a class="button text-button" href="CV.pdf">PDF CV</a>
         </div>
-        <div class="cta-group">
-          <a class="btn primary" href="CV.pdf">Download CV</a>
-          <a class="btn ghost" href="#contact">Get in touch</a>
-          <a class="btn subtle" href="publications/" target="_blank" rel="noreferrer noopener">Browse publications</a>
-        </div>
-        <div class="meta-links">
-          <a href="https://twitter.com/austinclyde13" target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter"></i> @austinclyde13</a>
-          <a href="https://github.com/aclyde11" target="_blank" rel="noreferrer noopener"><i class="fa fa-github"></i> aclyde11</a>
-          <a href="talks/" target="_blank" rel="noreferrer noopener"><i class="fa fa-microphone"></i> Talks</a>
-        </div>
-      </div>
-      <div class="hero-media">
-        <div class="portrait-wrap">
-          <img class="portrait" src="images/Clyde_Austin.jpg" alt="Portrait of Austin Clyde">
-          <div class="badge">AC</div>
-        </div>
-        <div class="card quick-facts">
-          <h3>Application materials</h3>
-          <div class="chip-row">
-            <a class="chip" href="CV.pdf">CV</a>
-            <a class="chip" href="research.pdf">Research</a>
-            <a class="chip" href="teaching.pdf">Teaching</a>
-            <a class="chip" href="DEI.pdf">DEI</a>
+        <dl class="compact-facts" aria-label="Profile facts">
+          <div>
+            <dt>Verified profile</dt>
+            <dd>ORCID 0000-0002-3697-7070</dd>
           </div>
-          <p>Also teaching international human rights law & AI in the Pozen Family Center for Human Rights.</p>
+          <div>
+            <dt>Background</dt>
+            <dd>Ph.D. in Computer Science, University of Chicago</dd>
+          </div>
+          <div>
+            <dt>Research arc</dt>
+            <dd>AI/HPC drug discovery to accountable systems</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-visual" aria-label="Austin Clyde profile and research summary">
+        <figure class="portrait-panel">
+          <img src="images/Clyde_Austin.jpg" alt="Portrait of Austin Clyde">
+        </figure>
+        <div class="system-panel">
+          <div class="panel-head">
+            <span>data-sync</span>
+            <span id="sync-status">OpenAlex verified</span>
+          </div>
+          <p class="terminal-line"><span>$</span> publications.sync --source openalex</p>
+          <div class="signal-grid" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <dl class="metric-list">
+            <div>
+              <dt>Curated records</dt>
+              <dd id="metric-records">45</dd>
+            </div>
+            <div>
+              <dt>OpenAlex works</dt>
+              <dd id="metric-works">53</dd>
+            </div>
+            <div>
+              <dt>Citations</dt>
+              <dd id="metric-citations">1,617</dd>
+            </div>
+            <div>
+              <dt>h-index</dt>
+              <dd id="metric-hindex">19</dd>
+            </div>
+            <div>
+              <dt>ORCID</dt>
+              <dd><a href="https://orcid.org/0000-0002-3697-7070">0000-0002-3697-7070</a></dd>
+            </div>
+            <div>
+              <dt>Last source update</dt>
+              <dd id="metric-updated">2026-06-04</dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section narrow" aria-labelledby="about-title">
-      <h2 id="about-title">About</h2>
-      <p>
-        I design interpretable AI for high-performance scientific systems and study how algorithmic decisions reshape civic life.
-        My work spans large language models for drug discovery and biological design, AI calibration, and the democratic and human-rights implications of automated systems.
-        I am twice recognized by ACM with the Gordon Bell Special Prize (2020, 2022) and contributed to the National Virtual Biotechnology Laboratory's COVID-19 response, honored with a U.S. Department of Energy Secretary's Award.
-      </p>
-      <div class="highlight-grid">
-        <div class="card">
-          <h3>Teaching</h3>
-          <p>Lecturer at the University of Chicago, teaching computer science and AI & human rights.</p>
-        </div>
-        <div class="card">
-          <h3>Focus</h3>
-          <p>Explainability, calibration, and scrutability across AI workflows — built for scientists and public institutions.</p>
-        </div>
-        <div class="card">
-          <h3>Methods</h3>
-          <p>Blend quantitative modeling (HPC, LLMs, simulation) with qualitative research in science & technology studies.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="focus" class="section" aria-labelledby="focus-title">
+    <section id="work" class="content-band">
       <div class="section-heading">
-        <h2 id="focus-title">Research focus</h2>
-        <p>How we build and interpret AI for science — and how society interprets AI in return.</p>
+        <p class="section-label">Selected work</p>
+        <h2>Systems work grounded in science problems.</h2>
       </div>
-      <div class="card-grid">
-        <div class="card">
-          <h3>Explainability</h3>
-          <p>Sample-based explainability for scientific AI: linking model behavior to data choices, experimental noise, and interdisciplinary collaboration.</p>
-        </div>
-        <div class="card">
-          <h3>Scrutiny</h3>
-          <p>Practical techniques to interrogate LLMs and edge models, treating them as knowledge systems that must be audited before deployment.</p>
-        </div>
-        <div class="card">
-          <h3>Calibration</h3>
-          <p>Automatic calibration for large-scale AI workflows and scientific campaigns, including resilient calibration for LLMs.</p>
-        </div>
-        <div class="card">
-          <h3>Law, Democracy & Rights</h3>
-          <p>Research on civic epistemologies, legal interpretation of AI systems, and how transparency standards shape democratic participation.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section" aria-labelledby="projects-title">
-      <div class="section-heading">
-        <h2 id="projects-title">Current projects</h2>
-        <p>Making AI interpretable, efficient, and ready for scientific discovery.</p>
-      </div>
-      <div class="list-cards">
-        <article class="list-card">
-          <div>
-            <div class="label success">Regression Enrichment Surfaces</div>
-            <h3><a href="https://github.com/aclyde11/regression_enrichment_surface" target="_blank" rel="noreferrer noopener">RES</a></h3>
-            <p>Python package and methodology for analyzing deep learning models in virtual screening tasks.</p>
-          </div>
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="card-index">01</div>
+          <h3>High-performance AI systems</h3>
+          <p>Current work centers on performant AI infrastructure: C++ systems, scaling constraints, reliability, and engineering choices that matter when models and workloads get large.</p>
         </article>
-        <article class="list-card">
-          <div>
-            <div class="label success">RLDock</div>
-            <h3><a href="https://github.com/aclyde11/RLMM" target="_blank" rel="noreferrer noopener">RL-driven docking</a></h3>
-            <p>OpenAI Gym environment enabling reinforcement learning for flexible structural docking.</p>
-          </div>
+        <article class="work-card">
+          <div class="card-index">02</div>
+          <h3>AI and HPC for drug discovery</h3>
+          <p>Research on workflows that combine machine learning, molecular simulation, supercomputing, and large screening campaigns for COVID therapeutics and oncology.</p>
         </article>
-        <article class="list-card">
-          <div>
-            <div class="label success">CANDLE</div>
-            <h3><a href="https://github.com/ECP-CANDLE/Benchmarks" target="_blank" rel="noreferrer noopener">Cancer response prediction</a></h3>
-            <p>NCI/DOE Pilot-1 dose response models for precision oncology and scalable AI benchmarking.</p>
-          </div>
+        <article class="work-card">
+          <div class="card-index">03</div>
+          <h3>Molecular modeling environments</h3>
+          <p>RLMM and RLDock explored reinforcement-learning environments for protein-ligand docking, flexible targets, and simulation-aware molecular search.</p>
+          <a href="https://github.com/aclyde11/RLMM">View RLMM</a>
+        </article>
+        <article class="work-card">
+          <div class="card-index">04</div>
+          <h3>Accountable AI systems</h3>
+          <p>Writing and teaching on algorithmic scrutiny, human rights, democratic participation, and why interpretation is a technical and institutional problem.</p>
         </article>
       </div>
     </section>
 
-    <section id="publications" class="section" aria-labelledby="publications-title">
-      <div class="section-heading">
-        <h2 id="publications-title">Publications</h2>
-        <p>Curated publication list without leaving the page.</p>
+    <section id="research" class="split-band">
+      <div class="section-heading sticky-heading">
+        <p class="section-label">Research</p>
+        <h2>AI for science, with interpretation kept in the loop.</h2>
       </div>
-      <div class="iframe-wrap">
-        <iframe title="Publications list" src="publications/index.html" loading="lazy"></iframe>
-      </div>
-      <div class="cta-inline">
-        <a class="btn ghost" href="publications/" target="_blank" rel="noreferrer noopener">Open full publications site</a>
+      <div class="research-list">
+        <article>
+          <h3>Scientific AI and HPC</h3>
+          <p>My dissertation work focused on AI and high-performance computing for structure-based drug discovery: accelerating docking, designing scalable screening workflows, and making those workflows useful to domain scientists.</p>
+        </article>
+        <article>
+          <h3>Chemical space and molecular design</h3>
+          <p>Scaffold-based work reframes chemical enumeration around interpretable molecular neighborhoods, graph structure, and design constraints that chemists can reason about.</p>
+        </article>
+        <article>
+          <h3>Interpretability, law, and democracy</h3>
+          <p>My STS and human-rights work asks how model interpretation, evidence, public explanation, and institutional power meet when algorithmic systems shape civic life.</p>
+        </article>
       </div>
     </section>
 
-    <section id="teaching" class="section" aria-labelledby="teaching-title">
+    <section id="publications" class="content-band">
       <div class="section-heading">
-        <h2 id="teaching-title">Teaching</h2>
-        <p>Helping students build rigorous, reflective approaches to computing.</p>
+        <p class="section-label">Publications</p>
+        <h2>Checked, structured, and easy to update.</h2>
       </div>
-      <ul class="timeline">
-        <li><span class="label success">UChicago Instructor</span> Introduction to Computer Science II (CMSC 152), Department of Computer Science, University of Chicago (Summer '21)</li>
-        <li><span class="label success">CAAP Lecturer</span> Chicago Academic Achievement Program Computer Science Course (Summer '20, '21)</li>
-        <li><span class="label success">MPCS Practicum</span> Reinforcement Learning for COVID-19 (Spring '20)</li>
-        <li><span class="label success">CMSC 254</span> TA for Machine Learning in Medicine (Fall '19)</li>
-      </ul>
+      <div class="data-grid">
+        <div class="data-card">
+          <h3>Automated publication sync</h3>
+          <p>The publication archive is generated from structured data. Running <code>npm run sync:publications</code> fetches OpenAlex author records, collapses duplicate preprint/final-paper entries, applies curated overrides, and rebuilds the archive page.</p>
+          <a class="button" href="publications/">Open all publications</a>
+        </div>
+        <div class="featured-publications" id="featured-publications" aria-live="polite">
+          <article class="mini-publication">
+            <span>2023</span>
+            <h3><a href="https://doi.org/10.1038/s41598-023-28785-9">AI-accelerated protein-ligand docking for SARS-CoV-2 is 100-fold faster with no significant change in detection</a></h3>
+            <p>Scientific Reports</p>
+          </article>
+          <article class="mini-publication">
+            <span>2023</span>
+            <h3><a href="https://doi.org/10.1177/10943420231201154">GenSLMs: Genome-scale language models reveal SARS-CoV-2 evolutionary dynamics</a></h3>
+            <p>International Journal of High Performance Computing Applications</p>
+          </article>
+          <article class="mini-publication">
+            <span>2023</span>
+            <h3><a href="https://doi.org/10.1142/9789811265679_0034">Large Language Models for Science</a></h3>
+            <p>Artificial Intelligence for Science</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="section narrow" aria-labelledby="contact-title">
-      <h2 id="contact-title">Contact</h2>
-      <p>Interested in collaborations on AI for science, interpretability, or the civic life of algorithms? Reach out.</p>
-      <div class="contact-grid">
-        <div class="card">
-          <h3>Email</h3>
-          <p id="email"></p>
-        </div>
-        <div class="card">
-          <h3>Current city</h3>
-          <p>Chicago, IL</p>
-          <p><a href="https://austinclyde.com">austinclyde.com</a></p>
-        </div>
-        <div class="card">
-          <h3>Social</h3>
-          <p><a href="https://twitter.com/austinclyde13" target="_blank" rel="noreferrer noopener">Twitter</a> · <a href="https://github.com/aclyde11" target="_blank" rel="noreferrer noopener">GitHub</a></p>
-        </div>
+    <section id="writing" class="content-band accent-band">
+      <div class="section-heading">
+        <p class="section-label">Writing and teaching</p>
+        <h2>Computing as a technical and civic practice.</h2>
+      </div>
+      <div class="writing-grid">
+        <article>
+          <h3>AI, Algorithms, and Human Rights</h3>
+          <p>University of Chicago course awarded the Pozen Family Center for Human Rights Graduate Lectureship, cross-listed in Computer Science and Media Arts and Design.</p>
+        </article>
+        <article>
+          <h3>Human-in-the-loop accountability</h3>
+          <p>Public writing in Tech Policy Press on why human review is not enough for democratic accountability in automated decisions.</p>
+          <a href="https://www.techpolicy.press/human-in-the-loop-systems-are-no-panacea-for-ai-accountability/">Read essay</a>
+        </article>
+        <article>
+          <h3>Social media and democracy</h3>
+          <p>Writing on platform legitimacy, online public spheres, polarization, and how algorithmic systems reshape political authority.</p>
+          <a href="https://www.techpolicy.press/are-social-media-platforms-a-legitimate-component-of-democracy/">Read essay</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="cv" class="split-band">
+      <div class="section-heading sticky-heading">
+        <p class="section-label">Web CV</p>
+        <h2>Short version.</h2>
+      </div>
+      <div class="timeline-list">
+        <article>
+          <span>Education</span>
+          <h3>Ph.D., M.S., and B.A. from the University of Chicago</h3>
+          <p>Ph.D. thesis: Artificial Intelligence and High-Performance Computing for Accelerating Structure-Based Drug Discovery.</p>
+        </article>
+        <article>
+          <span>Recognition</span>
+          <h3>ACM Gordon Bell Special Prize work in 2020 and 2022</h3>
+          <p>Contributor to AI and HPC research campaigns recognized for COVID-19 science and genome-scale language models.</p>
+        </article>
+        <article>
+          <span>Teaching</span>
+          <h3>Computer science, AI, human rights, and democracy</h3>
+          <p>Instructor for AI and human-rights courses, introductory C/C++, computational thinking, and reinforcement learning for drug discovery.</p>
+        </article>
+        <a class="button" href="cv.html">Open web CV</a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-band">
+      <div>
+        <p class="section-label">Contact</p>
+        <h2>For collaborations around AI systems, scientific computing, or accountable AI.</h2>
+      </div>
+      <div class="contact-actions">
+        <a class="button primary" id="email-link" href="mailto:aclyde11@gmail.com">Email</a>
+        <a class="button" href="https://github.com/aclyde11">GitHub</a>
+        <a class="button" href="https://orcid.org/0000-0002-3697-7070">ORCID</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-inner">
-      <p>© 2024 Austin Clyde. Built to be fast, accessible, and search-friendly.</p>
-      <a href="#top" class="back-to-top">Back to top</a>
+    <div>
+      <strong>Austin Clyde</strong>
+      <span>High-performance AI systems, scientific computing, and accountable AI.</span>
     </div>
+    <span>Updated 2026</span>
   </footer>
-
-  <script>
-    (function() {
-      var nav = document.querySelector('.site-nav');
-      var toggle = document.getElementById('menu-toggle');
-      var navLinks = document.querySelectorAll('.nav-links a');
-
-      if (toggle && nav) {
-        toggle.addEventListener('click', function() {
-          var isOpen = nav.classList.toggle('open');
-          toggle.setAttribute('aria-expanded', isOpen);
-        });
-      }
-
-      navLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
-          if (nav) {
-            nav.classList.remove('open');
-          }
-          if (toggle) {
-            toggle.setAttribute('aria-expanded', 'false');
-          }
-        });
-      });
-
-      var emailEl = document.getElementById('email');
-      if (emailEl) {
-        var user = 'aclyde';
-        var domain = 'anl.gov';
-        emailEl.innerHTML = '<a href="mailto:' + user + '@' + domain + '">' + user + '@' + domain + '</a>';
-      }
-
-      var sections = document.querySelectorAll('section[id]');
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            var activeId = '#' + entry.target.id;
-            navLinks.forEach(function(link) {
-              if (link.getAttribute('href') === activeId) {
-                link.classList.add('active');
-              } else {
-                link.classList.remove('active');
-              }
-            });
-          }
-        });
-      }, { rootMargin: '-55% 0px -35% 0px', threshold: 0 });
-
-      sections.forEach(function(section) {
-        observer.observe(section);
-      });
-    })();
-  </script>
+  <script src="js/site.js"></script>
 </body>
 </html>

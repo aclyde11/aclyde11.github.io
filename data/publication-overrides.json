@@ -1,0 +1,176 @@
+{
+  "authorIds": [
+    "A5088879250",
+    "A5137569857"
+  ],
+  "openAlexAuthorUrl": "https://openalex.org/A5088879250",
+  "featured": [
+    "10.1038/s41598-023-28785-9",
+    "10.1177/10943420231201154",
+    "10.1142/9789811265679_0034",
+    "10.1111/cgf.14807",
+    "10.1016/j.patter.2022.100446",
+    "10.1177/10943420211006452",
+    "10.48550/arxiv.2109.05012",
+    "techpolicy-social-media-democracy"
+  ],
+  "excludeDois": [
+    "10.48550/arxiv.2211.10442",
+    "10.48550/arxiv.2308.01921",
+    "10.48550/arxiv.2104.08961",
+    "10.1101/2021.03.27.437323",
+    "10.1101/2021.10.09.463779",
+    "10.1101/2021.11.12.468428",
+    "10.1101/2022.10.10.511571",
+    "10.6082/wxs31-z7p10",
+    "10.6082/2n56a-p0n61"
+  ],
+  "overrides": {
+    "10.1007/978-1-0716-1787-8_13": {
+      "year": 2022,
+      "category": "book-chapters",
+      "source": "Artificial Intelligence in Drug Design / Methods in Molecular Biology"
+    },
+    "10.1142/9789811265679_0034": {
+      "category": "book-chapters",
+      "source": "Artificial Intelligence for Science"
+    },
+    "10.1177/10943420231201154": {
+      "award": "ACM Gordon Bell Special Prize 2022",
+      "category": "articles",
+      "summary": "Genome-scale language models for SARS-CoV-2 evolutionary dynamics, recognized with the 2022 ACM Gordon Bell Special Prize."
+    },
+    "10.1177/10943420211006452": {
+      "award": "ACM Gordon Bell Special Prize 2020",
+      "category": "articles"
+    },
+    "10.1177/10943420221113513": {
+      "award": "ACM Gordon Bell Special Prize finalist 2021",
+      "category": "articles"
+    },
+    "10.1177/10943420221128233": {
+      "award": "ACM Gordon Bell Special Prize finalist 2021",
+      "category": "articles"
+    },
+    "10.1145/3472456.3473524": {
+      "category": "conference",
+      "source": "International Conference on Parallel Processing (ICPP)"
+    },
+    "10.1145/3468267.3470573": {
+      "category": "conference",
+      "source": "Platform for Advanced Scientific Computing (PASC)"
+    },
+    "10.1145/3468267.3470578": {
+      "title": "Stream-AI-MD: Streaming AI-driven adaptive molecular simulations for heterogeneous computing platforms",
+      "category": "conference",
+      "source": "Platform for Advanced Scientific Computing (PASC)"
+    },
+    "10.1109/icmla58977.2023.00117": {
+      "category": "conference",
+      "source": "International Conference on Machine Learning and Applications (ICMLA)"
+    },
+    "10.1158/1538-7445.am2023-5380": {
+      "category": "conference",
+      "source": "American Association for Cancer Research Annual Meeting"
+    },
+    "10.48550/arxiv.2109.05012": {
+      "category": "preprints",
+      "source": "arXiv"
+    },
+    "10.48550/arxiv.2103.06867": {
+      "category": "workshops",
+      "source": "NeurIPS Workshop on Learning Meaningful Representation of Life"
+    },
+    "10.48550/arxiv.2211.02720": {
+      "category": "workshops",
+      "source": "NeurIPS Workshop on AI for Science"
+    },
+    "10.6082/nn4xg-wny02": {
+      "category": "dissertation",
+      "source": "University of Chicago"
+    },
+    "10.6084/m9.figshare.14745234": {
+      "category": "datasets",
+      "source": "Figshare"
+    },
+    "10.6084/m9.figshare.13641101": {
+      "category": "datasets",
+      "source": "Figshare"
+    },
+    "10.57702/e42dvhxm": {
+      "title": "Mcule database",
+      "category": "datasets",
+      "source": "TIB Data Manager"
+    },
+    "10.57702/kskrs7b7": {
+      "title": "Scaffolds as classes over drug-like chemical space",
+      "category": "datasets",
+      "source": "TIB Data Manager"
+    }
+  },
+  "manualWorks": [
+    {
+      "id": "techpolicy-social-media-democracy",
+      "title": "Are Social Media Platforms a Legitimate Component of Democracy?",
+      "authors": [
+        "Austin Clyde"
+      ],
+      "year": 2022,
+      "category": "essays",
+      "source": "Tech Policy Press",
+      "url": "https://www.techpolicy.press/are-social-media-platforms-a-legitimate-component-of-democracy/",
+      "summary": "An essay on platform power, legitimacy, and social media as a democratic public sphere."
+    },
+    {
+      "id": "techpolicy-polarization",
+      "title": "Algorithmic Systems Designed to Reduce Polarization Could Hurt Democracy, Not Help It",
+      "authors": [
+        "Austin Clyde"
+      ],
+      "year": 2022,
+      "category": "essays",
+      "source": "Tech Policy Press",
+      "url": "https://www.techpolicy.press/algorithmic-systems-designed-to-reduce-polarization-could-hurt-democracy-not-help-it/",
+      "summary": "A critique of bridging-based recommender systems and the politics of optimizing civic discourse."
+    },
+    {
+      "id": "techpolicy-human-loop",
+      "title": "Human-in-the-Loop Systems Are No Panacea for AI Accountability",
+      "authors": [
+        "Austin Clyde"
+      ],
+      "year": 2021,
+      "category": "essays",
+      "source": "Tech Policy Press",
+      "url": "https://www.techpolicy.press/human-in-the-loop-systems-are-no-panacea-for-ai-accountability/",
+      "summary": "An argument that human review alone cannot make high-risk automated decision systems accountable."
+    },
+    {
+      "id": "ostp-equitable-data",
+      "title": "Equitable Data Engagement and Accountability (87 FR 54269)",
+      "authors": [
+        "Austin Clyde",
+        "Aishani Aatresh"
+      ],
+      "year": 2022,
+      "category": "public-comments",
+      "source": "White House Office of Science and Technology Policy",
+      "url": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2023/10/Responses-Request-for-Information-Equitable-Data-Engagement-and-Accountability.pdf",
+      "summary": "Public comment on equitable public data, accountability, usability, and civic engagement."
+    },
+    {
+      "id": "patent-rl-molecular-modeling",
+      "title": "Systems and methods for reinforcement learning molecular modeling",
+      "authors": [
+        "Austin Clyde",
+        "Arvind Ramanathan",
+        "Rick Stevens"
+      ],
+      "year": 2022,
+      "category": "patents",
+      "source": "US Patent Application US20220351808A1",
+      "url": "https://patents.google.com/patent/US20220351808A1/en",
+      "summary": "Patent application for reinforcement-learning workflows for molecular modeling."
+    }
+  ]
+}

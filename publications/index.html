@@ -1,540 +1,609 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>[ Clyde | All Publications ]</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<script src="js/respond.min.js"></script>
-<![endif]-->
-
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-<script type="text/javascript" src="js/jquery.tipsy.js"></script>
-<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-<link rel="stylesheet" type="text/css" href="css/custom.css"/>
-<link rel="stylesheet" type="text/css" href="css/tipsy.css"/>
-<link rel="stylesheet" type="text/css" href="css/fancybox.css"/>
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/menucollapse.js"></script>
-<script type="text/javascript" src="js/arrow78.js"></script><html>
-
-
-<!-- Google Site Search | Search box-->
-<script>
-<!--
-  (function() {
-    var cx = '012777421281883581498:r3xp4rmwevw';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
--->
-</script>
-<!-- Google Analytics -->
-<script>
-<!--
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-70658068-1', 'auto');
-  ga('send', 'pageview');
--->
-</script>
-<script language="JavaScript">
-<!--
-    function spiderjam(mym, myd){
-        document.write("<a href=mailto:"	+ mym + "&#64;" + myd + ">" + mym + "&#64;" + myd + "</a>");
-    }
--->
-</script>
-
-<body id="page-top" class="index">
-
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="glyphicon glyphicon-search"></span>
-            </button>
-            <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!-- <span><a href="../index.html"><img border="0" width="170" src="images/csucy.png"/></a></span> -->
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                Home<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                    <li><a href="../index.html#intro">Introduction</a></li>
-                        <li><a href="../bio.html">Biography</a></li>
-                        <li><a href="../cv.html">CV (Web)</a></li>
-                        <li><a target="_blank" href="../zeinalipour.pdf">CV (PDF)</a></li>
-                    </ul>
-                </li>
-                <li class="page-scroll">
-                <a href="../index.html#news">News</a>
-                </li>
-                <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                Publications<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                    <li><a href="../index.html#publications">Selected</a></li>
-                        <li><a href="index.php">All</a></li>
-                    </ul>
-                </li>
-                <li class="page-scroll">
-                    <a href="../index.html#awards">Awards</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="../talks/">Talks</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="../index.html#courses">Courses</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="../index.html#systems">Systems</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="../index.html#service">Service</a>
-                </li>
-                <li class="page-scroll">
-                <a href="../index.html#advising">Advising</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="../index.html#contact">Contact</a>
-                </li>
-                <li class="page-scroll">
-                    <a onclick="$('#bs-example-navbar-collapse-2').toggle();">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </a>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-
-        <!-- search box submenu -->
-        <div class="collapse" id="bs-example-navbar-collapse-2">
-            <gcse:search></gcse:search>
-        </div>
-
-    </div><!-- /.container-fluid -->
-</nav>
-
-<section>
-    <!-- Place this tag where you want the search results to render -->
-    <gcse:searchresults-only></gcse:searchresults-only>
-</section>
-
-<section id="tree" style="margin-top:50px">
-    <div class="container">
-        <a href="../index.html">Clyde</a> > All Publications
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Austin Clyde | Publications</title>
+  <meta name="description" content="Austin Clyde's publications, datasets, book chapters, essays, patents, and public comments.">
+  <link rel="canonical" href="https://austinclyde.com/publications/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="nav-shell">
+      <a class="brand" href="../">Austin Clyde</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="../#work">Work</a>
+        <a href="../#research">Research</a>
+        <a href="./" aria-current="page">Publications</a>
+        <a href="../cv.html">CV</a>
+        <a href="../#contact">Contact</a>
+      </nav>
     </div>
-</section>
+  </header>
 
-<!-- Home Section -->
-<section id="home">
-    <div class="container" id="publications">
-    <br>
-    <h1 align="CENTER">All Publications of Austin Clyde</h1>
-    <br>
-<ul id="publication-filter"><li><a href="#" class="btn btn-sm btn-success current" data-filter="*">All</a></li><li><a href="#" class="btn btn-xs btn-danger current" data-filter=".award.">Awards</a></li><li><a href="#" class="btn btn-xs btn-info" data-filter=".journal">Journals and Magazines</a></li><li><a href="#" class="btn btn-xs btn-info" data-filter=".conference">Conference Proceedings</a></li><li><a href="#" class="btn btn-xs btn-info" data-filter=".book">Book Chapters</a></li><li><a href="#" class="btn btn-xs btn-info" data-filter=".editorial">Editorials</a></li><br><br><li><a href="#" class="btn btn-xs btn-primary" data-filter=".2022">2022</a></li><li><a href="#" class="btn btn-xs btn-primary" data-filter=".2021">2021</a></li><li><a href="#" class="btn btn-xs btn-primary" data-filter=".2020">2020</a></li><li><a href="#" class="btn btn-xs btn-primary" data-filter=".2019">2019</a></li></ul><div style="clear:both;"></div><ul id="publication-list"><li class="2022 journal"><h2>Journals and Magazines</h2></li><li class="2022 award publication journal" title="2022"><strong>[J9]</strong> <strong>"<a href="https://arxiv.org/pdf/2109.05012.pdf" class="publications-title" target="_blank">Scaffold-Induced Molecular Graph (SIMG): Effective Graph Sampling Methods for High-Throughput Computational Drug Discovery</a>"</strong>,  Clyde, Austin and Shah, Ashka and Zvyagin, Max and Ramanathan, Arvind and Stevens, Rick, <i><b>BMC Bioinformatics.</b></i> <strong>2022</strong>.&nbsp;<a href="#bibtex-0" title="Bibtex Citation" id="publink-0"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-0"><pre>@article{clyde2021scaffold,
-title={Scaffold-Induced Molecular Graph (SIMG): Effective Graph Sampling Methods for High-Throughput Computational Drug Discovery},
-author={Clyde, Austin and Shah, Ashka and Zvyagin, Max and Ramanathan, Arvind and Stevens, Rick},
-journal={BMC Bioinformatics.},
-year={2022},
-type={journal},
-volume = {},
-pages = {},
-award = {},
-number = {},
-address = {},
-durl={https://arxiv.org/pdf/2109.05012.pdf}
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://arxiv.org/pdf/2109.05012.pdf"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2022 award publication journal" title="2022"><strong>[J8]</strong> <strong>"<a href="https://journals.sagepub.com/doi/abs/10.1177/10943420221113513" class="publications-title" target="_blank">Intelligent resolution: Integrating Cryo-EM with AI-driven multi-resolution simulations to observe the severe acute respiratory syndrome coronavirus-2 replication-transcription machinery in action</a>"</strong>,  Anda Trifan and Defne Gorgun and Michael Salim and Zongyi Li and Alexander Brace and Maxim Zvyagin and Heng Ma and Austin Clyde and David Clark and David J Hardy and Tom Burnley and Lei Huang and John McCalpin and Murali Emani and Hyenseung Yoo and Junqi Yin and Aristeidis Tsaris and Vishal Subbiah and Tanveer Raza and Jessica Liu and Noah Trebesch and Geoffrey Wells and Venkatesh Mysore and Thomas Gibbs and James Phillips and S Chakra Chennubhotla and Ian Foster and Rick Stevens and Anima Anandkumar and Venkatram Vishwanath and John E Stone and Emad Tajkhorshid and Sarah A Harris and Arvind Ramanathan, <i><b>The International Journal of High Performance Computing Applications</b></i>  Vol. 0,  Iss. 0,  pp. 10943420221113513,  DOI: <a class="publications-title" target="blank" href="https://doi.org/10.1177/10943420221113513">10.1177/10943420221113513</a>,&nbsp;<strong>2022</strong>. <font color='red'><b>Finalist Gordan Bell Prize  '21 '</b></font> &nbsp;<a href="#bibtex-1" title="Bibtex Citation" id="publink-1"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-1"><pre>@article{doi:10.1177/10943420221113513,
-author = {Anda Trifan and Defne Gorgun and Michael Salim and Zongyi Li and Alexander Brace and Maxim Zvyagin and Heng Ma and Austin Clyde and David Clark and David J Hardy and Tom Burnley and Lei Huang and John McCalpin and Murali Emani and Hyenseung Yoo and Junqi Yin and Aristeidis Tsaris and Vishal Subbiah and Tanveer Raza and Jessica Liu and Noah Trebesch and Geoffrey Wells and Venkatesh Mysore and Thomas Gibbs and James Phillips and S Chakra Chennubhotla and Ian Foster and Rick Stevens and Anima Anandkumar and Venkatram Vishwanath and John E Stone and Emad Tajkhorshid and Sarah A Harris and Arvind Ramanathan},
-title ={Intelligent resolution: Integrating Cryo-EM with AI-driven multi-resolution simulations to observe the severe acute respiratory syndrome coronavirus-2 replication-transcription machinery in action},
-journal = {The International Journal of High Performance Computing Applications},
-volume = {0},
-number = {0},
-pages = {10943420221113513},
-year = {2022},
-doi = {10.1177/10943420221113513},
-type = {journal},
-award={Finalist Gordan Bell Prize `21`},
-durl={https://journals.sagepub.com/doi/abs/10.1177/10943420221113513}
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://journals.sagepub.com/doi/abs/10.1177/10943420221113513"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2021 award publication journal" title="2021"><strong>[J7]</strong> <strong>"<a href="https://journals.sagepub.com/doi/pdf/10.1177/10943420221128233" class="publications-title" target="_blank">\# COVIDisAirborne: AI-enabled multiscale computational microscopy of delta SARS-CoV-2 in a respiratory aerosol</a>"</strong>,  Dommer, Abigail and Casalino, Lorenzo and Kearns, Fiona and Rosenfeld, Mia and Wauer, Nicholas and Ahn, Surl-Hee and Russo, John and Oliveira, Sofia and Morris, Clare and Bogetti, Anthony and others, <i><b>The International Journal of High Performance Computing Applications</b></i> SAGE Publications Sage UK: London, England,  pp. 10943420221128233, <strong>2021</strong>. <font color='red'><b>Finalist Gordan Bell Prize  '21 '</b></font> &nbsp;<a href="#bibtex-2" title="Bibtex Citation" id="publink-2"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-2"><pre>@article{dommer2021covidisairborne,
-title={\# COVIDisAirborne: AI-enabled multiscale computational microscopy of delta SARS-CoV-2 in a respiratory aerosol},
-author={Dommer, Abigail and Casalino, Lorenzo and Kearns, Fiona and Rosenfeld, Mia and Wauer, Nicholas and Ahn, Surl-Hee and Russo, John and Oliveira, Sofia and Morris, Clare and Bogetti, Anthony and others},
-journal={The International Journal of High Performance Computing Applications},
-pages={10943420221128233},
-year={2021},
-publisher={SAGE Publications Sage UK: London, England},
-type={journal},
-award={Finalist Gordan Bell Prize `21`},
-durl={https://journals.sagepub.com/doi/pdf/10.1177/10943420221128233},
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://journals.sagepub.com/doi/pdf/10.1177/10943420221128233"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2021 publication journal" title="2021"><strong>[J6]</strong> <strong>"<a href="https://pubs.acs.org/doi/full/10.1021/acs.jcim.1c00851" class="publications-title" target="_blank">High-throughput virtual screening and validation of a sars-cov-2 main protease noncovalent inhibitor</a>"</strong>,  Clyde, Austin and Galanie, Stephanie and Kneller, Daniel W and Ma, Heng and Babuji, Yadu and Blaiszik, Ben and Brace, Alexander and Brettin, Thomas and Chard, Kyle and Chard, Ryan and others, <i><b>Journal of chemical information and modeling</b></i> American Chemical Society,  Vol. 62,  Iss. 1,  pp. 116--128, <strong>2021</strong>.&nbsp;<a href="#bibtex-3" title="Bibtex Citation" id="publink-3"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-3"><pre>@article{clyde2021high,
-title={High-throughput virtual screening and validation of a sars-cov-2 main protease noncovalent inhibitor},
-author={Clyde, Austin and Galanie, Stephanie and Kneller, Daniel W and Ma, Heng and Babuji, Yadu and Blaiszik, Ben and Brace, Alexander and Brettin, Thomas and Chard, Kyle and Chard, Ryan and others},
-journal={Journal of chemical information and modeling},
-volume={62},
-number={1},
-pages={116--128},
-year={2021},
-publisher={American Chemical Society},
-type={journal},
-durl={https://pubs.acs.org/doi/full/10.1021/acs.jcim.1c00851}
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://pubs.acs.org/doi/full/10.1021/acs.jcim.1c00851"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2021 publication journal" title="2021"><strong>[J5]</strong> <strong>"<a href="https://pubs.acs.org/doi/full/10.1021/acs.jmedchem.1c01475" class="publications-title" target="_blank">Structural, electronic, and electrostatic determinants for inhibitor binding to subsites S1 and S2 in SARS-CoV-2 main protease</a>"</strong>,  Kneller, Daniel W and Li, Hui and Galanie, Stephanie and Phillips, Gwyndalyn and Labb\ 'e  Aud, <i><b>Journal of medicinal chemistry</b></i> American Chemical Society,  Vol. 64,  Iss. 23,  pp. 17366--17383, <strong>2021</strong>.&nbsp;<a href="#bibtex-4" title="Bibtex Citation" id="publink-4"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-4"><pre>@article{kneller2021structural,
-title={Structural, electronic, and electrostatic determinants for inhibitor binding to subsites S1 and S2 in SARS-CoV-2 main protease},
-author={Kneller, Daniel W and Li, Hui and Galanie, Stephanie and Phillips, Gwyndalyn and Labb{\`e}, Audrey and Weiss, Kevin L and Zhang, Qiu and Arnould, Mark A and Clyde, Austin and Ma, Heng and others},
-journal={Journal of medicinal chemistry},
-volume={64},
-number={23},
-pages={17366--17383},
-year={2021},
-publisher={American Chemical Society},
-type={journal},
-durl={https://pubs.acs.org/doi/full/10.1021/acs.jmedchem.1c01475}
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://pubs.acs.org/doi/full/10.1021/acs.jmedchem.1c01475"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2022 publication journal" title="2022"><strong>[J4]</strong> <strong>"<a href="https://academic.oup.com/bib/article/23/1/bbab356/6370300" class="publications-title" target="_blank">A cross-study analysis of drug response prediction in cancer cell lines</a>"</strong>,  Xia, Fangfang and Allen, Jonathan and Balaprakash, Prasanna and Brettin, Thomas and Garcia-Cardona, Cristina and Clyde, Austin and Cohn, Judith and Doroshow, James and Duan, Xiaotian and Dubinkina, Veronika and others, <i><b>Briefings in bioinformatics</b></i> Oxford University Press,  Vol. 23,  Iss. 1,  pp. bbab356, <strong>2022</strong>.&nbsp;<a href="#bibtex-5" title="Bibtex Citation" id="publink-5"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-5"><pre>@article{xia2022cross,
-title={A cross-study analysis of drug response prediction in cancer cell lines},
-author={Xia, Fangfang and Allen, Jonathan and Balaprakash, Prasanna and Brettin, Thomas and Garcia-Cardona, Cristina and Clyde, Austin and Cohn, Judith and Doroshow, James and Duan, Xiaotian and Dubinkina, Veronika and others},
-journal={Briefings in bioinformatics},
-volume={23},
-number={1},
-pages={bbab356},
-year={2022},
-publisher={Oxford University Press},
-type={journal},
-durl={https://academic.oup.com/bib/article/23/1/bbab356/6370300}
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://academic.oup.com/bib/article/23/1/bbab356/6370300"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2021 publication journal" title="2021"><strong>[J3]</strong> <strong>"<a href="https://royalsocietypublishing.org/doi/full/10.1098/rsfs.2021.0018" class="publications-title" target="_blank">Pandemic drugs at pandemic speed: infrastructure for accelerating COVID-19 drug discovery with hybrid machine learning-and physics-based simulations on high-performance computers</a>"</strong>,  Bhati, Agastya P and Wan, Shunzhou and Alf\ 'e  Dar, <i><b>Interface focus</b></i> The Royal Society,  Vol. 11,  Iss. 6,  pp. 20210018, <strong>2021</strong>.&nbsp;<a href="#bibtex-6" title="Bibtex Citation" id="publink-6"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-6"><pre>@article{bhati2021pandemic,
-title={Pandemic drugs at pandemic speed: infrastructure for accelerating COVID-19 drug discovery with hybrid machine learning-and physics-based simulations on high-performance computers},
-author={Bhati, Agastya P and Wan, Shunzhou and Alf{\`e}, Dario and Clyde, Austin R and Bode, Mathis and Tan, Li and Titov, Mikhail and Merzky, Andre and Turilli, Matteo and Jha, Shantenu and others},
-journal={Interface focus},
-volume={11},
-number={6},
-pages={20210018},
-year={2021},
-publisher={The Royal Society},
-type={journal},
-durl={https://royalsocietypublishing.org/doi/full/10.1098/rsfs.2021.0018}
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://royalsocietypublishing.org/doi/full/10.1098/rsfs.2021.0018"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2021 award publication journal" title="2021"><strong>[J2]</strong> <strong>"<a href="https://journals.sagepub.com/doi/pdf/10.1177/10943420211006452" class="publications-title" target="_blank">AI-driven multiscale simulations illuminate mechanisms of SARS-CoV-2 spike dynamics</a>"</strong>,  Casalino, Lorenzo and Dommer, Abigail C and Gaieb, Zied and Barros, Emilia P and Sztain, Terra and Ahn, Surl-Hee and Trifan, Anda and Brace, Alexander and Bogetti, Anthony T and Clyde, Austin and others, <i><b>The International Journal of High Performance Computing Applications</b></i> SAGE Publications Sage UK: London, England,  Vol. 35,  Iss. 5,  pp. 432--451, <strong>2021</strong>. <font color='red'><b>[ Gordan Bell Prize 2020]</b></font> &nbsp;<a href="#bibtex-7" title="Bibtex Citation" id="publink-7"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-7"><pre>@article{casalino2021ai,
-title={AI-driven multiscale simulations illuminate mechanisms of SARS-CoV-2 spike dynamics},
-author={Casalino, Lorenzo and Dommer, Abigail C and Gaieb, Zied and Barros, Emilia P and Sztain, Terra and Ahn, Surl-Hee and Trifan, Anda and Brace, Alexander and Bogetti, Anthony T and Clyde, Austin and others},
-journal={The International Journal of High Performance Computing Applications},
-volume={35},
-number={5},
-pages={432--451},
-year={2021},
-publisher={SAGE Publications Sage UK: London, England},
-type={journal},
-award = {[ Gordan Bell Prize 2020]},
-durl={https://journals.sagepub.com/doi/pdf/10.1177/10943420211006452}
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://journals.sagepub.com/doi/pdf/10.1177/10943420211006452"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2021 publication journal" title="2021"><strong>[J1]</strong> <strong>"<a href="https://link.springer.com/article/10.1186/s12859-021-04163-y" class="publications-title" target="_blank">Learning curves for drug response prediction in cancer cell lines</a>"</strong>,  Partin, Alexander and Brettin, Thomas and Evrard, Yvonne A and Zhu, Yitan and Yoo, Hyunseung and Xia, Fangfang and Jiang, Songhao and Clyde, Austin and Shukla, Maulik and Fonstein, Michael and others, <i><b>BMC bioinformatics</b></i> BioMed Central,  Vol. 22,  Iss. 1,  pp. 1--18, <strong>2021</strong>.&nbsp;<a href="#bibtex-8" title="Bibtex Citation" id="publink-8"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-8"><pre>@article{partin2021learning,
-title={Learning curves for drug response prediction in cancer cell lines},
-author={Partin, Alexander and Brettin, Thomas and Evrard, Yvonne A and Zhu, Yitan and Yoo, Hyunseung and Xia, Fangfang and Jiang, Songhao and Clyde, Austin and Shukla, Maulik and Fonstein, Michael and others},
-journal={BMC bioinformatics},
-volume={22},
-number={1},
-pages={1--18},
-year={2021},
-publisher={BioMed Central},
-type={journal},
-durl={https://link.springer.com/article/10.1186/s12859-021-04163-y}
-},
-Books
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://link.springer.com/article/10.1186/s12859-021-04163-y"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2021 conference"><h2>Conference Proceedings</h2></li><li class="2021 award publication conference" title="2021"><strong>[C12]</strong> <strong>"<a href="https://arxiv.org/pdf/2106.02190.pdf" class="publications-title" target="_blank">Spatial graph attention and curiosity-driven policy for antiviral drug discovery</a>"</strong>,  Wu, Yulun and Choma, Nicholas and Chen, Andrew and Cashman, Mikaela and Prates, \ 'Erica T and Shah, Manesh and Vergara, Ver\ 'onica G Melesse and Clyde, Austin and Brettin, Thomas S and de Jong, Wibe A and others, <b>The 10th International Conference on Learning Representations (ICLR) 2022</b> virtual <strong>2021</strong>.&nbsp;<a href="#bibtex-9" title="Bibtex Citation" id="publink-9"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-9"><pre>@inproceedings{wu2021spatial,
-title={Spatial graph attention and curiosity-driven policy for antiviral drug discovery},
-author={Wu, Yulun and Choma, Nicholas and Chen, Andrew and Cashman, Mikaela and Prates, {\`E}rica T and Shah, Manesh and Vergara, Ver{\`o}nica G Melesse and Clyde, Austin and Brettin, Thomas S and de Jong, Wibe A and others},
-booktitle={The 10th International Conference on Learning Representations (ICLR) 2022},
-year={2021},
-type={conference},
-durl={https://arxiv.org/pdf/2106.02190.pdf},
-volume = {},
-pages = {},
-location = {virtual},
-award = {},
-number = {},
-address = {},
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://arxiv.org/pdf/2106.02190.pdf"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2021 award publication conference" title="2021"><strong>[C11]</strong> <strong>"Autodock on Enamine Hit Locator Library and Drugbank"</strong>,  Hubertus van Dam, Martin Purschke, Dean Hidas, Oleg Tchoubar, Maksim Rakitin, Xiaohui Qu, Austin Clyde, et al., <b>IEEE Healthcare Summit Data Hackathon 2021.</b> virtual <strong>2021</strong>.&nbsp;<a href="#bibtex-10" title="Bibtex Citation" id="publink-10"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-10"><pre>@inproceedings{autodock,
-title={Autodock on Enamine Hit Locator Library and Drugbank},
-author={Hubertus van Dam, Martin Purschke, Dean Hidas, Oleg Tchoubar, Maksim Rakitin, Xiaohui Qu, Austin Clyde, et al.},
-booktitle={IEEE Healthcare Summit Data Hackathon 2021.},
-pages={1--12},
-year={2021},
-type={conference},
-volume = {},
-pages = {},
-location = {virtual},
-award = {},
-number = {},
-address = {},
-}
-</pre></div></div></li><li class="2021 award publication conference" title="2021"><strong>[C10]</strong> <strong>"<a href="dl.acm.org/doi/pdf/10.1145/3472456.3473524" class="publications-title" target="_blank">IMPECCABLE: integrated modeling pipelinE for COVID cure by assessing better LEads</a>"</strong>,  Saadi, Aymen Al and Alfe, Dario and Babuji, Yadu and Bhati, Agastya and Blaiszik, Ben and Brace, Alexander and Brettin, Thomas and Chard, Kyle and Chard, Ryan and Clyde, Austin and others, <b>50th International Conference on Parallel Processing</b> virtual <strong>2021</strong>.&nbsp;<a href="#bibtex-11" title="Bibtex Citation" id="publink-11"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-11"><pre>@inproceedings{saadi2021impeccable,
-title={IMPECCABLE: integrated modeling pipelinE for COVID cure by assessing better LEads},
-author={Saadi, Aymen Al and Alfe, Dario and Babuji, Yadu and Bhati, Agastya and Blaiszik, Ben and Brace, Alexander and Brettin, Thomas and Chard, Kyle and Chard, Ryan and Clyde, Austin and others},
-booktitle={50th International Conference on Parallel Processing},
-pages={1--12},
-year={2021},
-type={conference},
-volume = {},
-pages = {},
-location = {virtual},
-award = {},
-number = {},
-durl={dl.acm.org/doi/pdf/10.1145/3472456.3473524},
-address = {},
-}
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="dl.acm.org/doi/pdf/10.1145/3472456.3473524"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2021 award publication conference" title="2021"><strong>[C9]</strong> <strong>"<a href="https://dl.acm.org/doi/pdf/10.1145/3468267.3470573" class="publications-title" target="_blank">Stream-AI-MD: Streaming AI-driven adaptive molecular simulations for heterogeneous computing platforms</a>"</strong>,  Brace, Alexander and Salim, Michael and Subbiah, Vishal and Ma, Heng and Emani, Murali and Trifa, Anda and Clyde, Austin R and Adams, Corey and Uram, Thomas and Yoo, Hyunseung and others, <b>Proceedings of the Platform for Advanced Scientific Computing Conference</b> virtual <strong>2021</strong>.&nbsp;<a href="#bibtex-12" title="Bibtex Citation" id="publink-12"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-12"><pre>@inproceedings{brace2021stream,
-title={Stream-AI-MD: Streaming AI-driven adaptive molecular simulations for heterogeneous computing platforms},
-author={Brace, Alexander and Salim, Michael and Subbiah, Vishal and Ma, Heng and Emani, Murali and Trifa, Anda and Clyde, Austin R and Adams, Corey and Uram, Thomas and Yoo, Hyunseung and others},
-booktitle={Proceedings of the Platform for Advanced Scientific Computing Conference},
-pages={1--13},
-year={2021},
-type={conference},
-volume = {},
-pages = {},
-location = {virtual},
-award = {},
-number = {},
-durl={https://dl.acm.org/doi/pdf/10.1145/3468267.3470573},
-address = {},
-}
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://dl.acm.org/doi/pdf/10.1145/3468267.3470573"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2021 award publication conference" title="2021"><strong>[C8]</strong> <strong>"<a href="https://dl.acm.org/doi/pdf/10.1145/3468267.3470573" class="publications-title" target="_blank">Scalable HPC \& AI infrastructure for COVID-19 therapeutics</a>"</strong>,  Lee, Hyungro and Merzky, Andre and Tan, Li and Titov, Mikhail and Turilli, Matteo and Alfe, Dario and Bhati, Agastya and Brace, Alex and Clyde, Austin and Coveney, Peter and others, <b>Proceedings of the Platform for Advanced Scientific Computing Conference</b> virtual <strong>2021</strong>.&nbsp;<a href="#bibtex-13" title="Bibtex Citation" id="publink-13"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-13"><pre>@inproceedings{lee2021scalable,
-title={Scalable HPC \& AI infrastructure for COVID-19 therapeutics},
-author={Lee, Hyungro and Merzky, Andre and Tan, Li and Titov, Mikhail and Turilli, Matteo and Alfe, Dario and Bhati, Agastya and Brace, Alex and Clyde, Austin and Coveney, Peter and others},
-booktitle={Proceedings of the Platform for Advanced Scientific Computing Conference},
-pages={1--13},
-year={2021},
-type={conference}
-volume = {},
-pages = {},
-location = {virtual},
-award = {},
-number = {},
-durl={https://dl.acm.org/doi/pdf/10.1145/3468267.3470573},
-address = {},
-}
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://dl.acm.org/doi/pdf/10.1145/3468267.3470573"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2020 award publication conference" title="2020"><strong>[C7]</strong> <strong>"<a href="https://arxiv.org/pdf/2006.02431.pdf" class="publications-title" target="_blank">Targeting SARS-CoV-2 with AI-and HPC-enabled lead generation: a first data release</a>"</strong>,  Babuji, Yadu and Blaiszik, Ben and Brettin, Tom and Chard, Kyle and Chard, Ryan and Clyde, Austin and Foster, Ian and Hong, Zhi and Jha, Shantenu and Li, Zhuozhao and others, virtual <strong>2020</strong>.&nbsp;<a href="#bibtex-14" title="Bibtex Citation" id="publink-14"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-14"><pre>@article{babuji2020targeting,
-title={Targeting SARS-CoV-2 with AI-and HPC-enabled lead generation: a first data release},
-author={Babuji, Yadu and Blaiszik, Ben and Brettin, Tom and Chard, Kyle and Chard, Ryan and Clyde, Austin and Foster, Ian and Hong, Zhi and Jha, Shantenu and Li, Zhuozhao and others},
-journal={arXiv preprint arXiv:2006.02431},
-year={2020},
-type={conference},
-volume = {},
-pages = {},
-location = {virtual},
-award = {},
-number = {},
-durl={https://arxiv.org/pdf/2006.02431.pdf},
-address = {},
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://arxiv.org/pdf/2006.02431.pdf"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2020 award publication conference" title="2020"><strong>[C6]</strong> <strong>"Created in our Likeness: Is Open-Source AI at Odds with animal Rights"</strong>,  Clyde, Austin, virtual <strong>2020</strong>.&nbsp;<a href="#bibtex-15" title="Bibtex Citation" id="publink-15"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-15"><pre>@article{created,
-title={Created in our Likeness: Is Open-Source AI at Odds with animal Rights},
-author={Clyde, Austin},
-journal={MANCEPT Workshop on Politics, Animals, and Technology ’21.},
-year={2020},
-type={conference},
-volume = {},
-pages = {},
-location = {virtual},
-award = {},
-number = {},
-address = {},
-},
-</pre></div></div></li><li class="2020 award publication conference" title="2020"><strong>[C5]</strong> <strong>"<a href="https://arxiv.org/pdf/2109.05012.pdf" class="publications-title" target="_blank">Scaffold-Induced Molecular Graph (SIMG): Effective Graph Sampling Methods for High-Throughput Computational Drug Discovery</a>"</strong>,  Clyde, Austin and Shah, Ashka and Zvyagin, Max and Ramanathan, Arvind and Stevens, Rick, virtual <strong>2020</strong>.&nbsp;<a href="#bibtex-16" title="Bibtex Citation" id="publink-16"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-16"><pre>@article{clyde2021scaffold,
-title={Scaffold-Induced Molecular Graph (SIMG): Effective Graph Sampling Methods for High-Throughput Computational Drug Discovery},
-author={Clyde, Austin and Shah, Ashka and Zvyagin, Max and Ramanathan, Arvind and Stevens, Rick},
-journal={Sixth Computational Approaches to Cancer Workshop at Supercomputing ‘20.},
-year={2020},
-type={conference},
-volume = {},
-pages = {},
-location = {virtual},
-award = {},
-number = {},
-address = {},
-durl={https://arxiv.org/pdf/2109.05012.pdf}
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://arxiv.org/pdf/2109.05012.pdf"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2019 award publication conference" title="2019"><strong>[C4]</strong> <strong>"<a href="https://sc19.supercomputing.org/proceedings/workshops/workshop_pages/ws_cafcw120.html" class="publications-title" target="_blank">Integrating High-Performance Simulations and Learning toward Improved Cancer Therapy</a>"</strong>,  Clyde, Austin and Wright, David and Jha, Shantenu, <b>Fifth Computational Approaches for Cancer Workshop</b> Boulder, CO <strong>2019</strong>.&nbsp;<a href="#bibtex-17" title="Bibtex Citation" id="publink-17"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-17"><pre>@inproceedings{clyde2019integrating,
-title={Integrating High-Performance Simulations and Learning toward Improved Cancer Therapy},
-author={Clyde, Austin and Wright, David and Jha, Shantenu},
-booktitle={Fifth Computational Approaches for Cancer Workshop},
-year={2019},
-type={conference},
-durl = {https://sc19.supercomputing.org/proceedings/workshops/workshop_pages/ws_cafcw120.html},
-type = {conference},
-volume = {},
-pages = {},
-location = {Boulder, CO},
-award = {},
-number = {},
-address = {},
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://sc19.supercomputing.org/proceedings/workshops/workshop_pages/ws_cafcw120.html"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2019 award publication conference" title="2019"><strong>[C3]</strong> <strong>"Combining molecular simulation and machine learning to INSPIRE improved cancer therapy"</strong>,  Wright, DW and Devitt-Lee, A and Clyde, A and Palani, K and Xia, F and Turilli, M and Karanicolas, J and Jha, S and Stevens, R and Chodera, JD and others, <b>CompBioMed Conference 2019</b> London, UK <strong>2019</strong>.&nbsp;<a href="#bibtex-18" title="Bibtex Citation" id="publink-18"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-18"><pre>@inproceedings{wright2019combining,
-title={Combining molecular simulation and machine learning to INSPIRE improved cancer therapy},
-author={Wright, DW and Devitt-Lee, A and Clyde, A and Palani, K and Xia, F and Turilli, M and Karanicolas, J and Jha, S and Stevens, R and Chodera, JD and others},
-booktitle={CompBioMed Conference 2019},
-year={2019},
-type={conference},
-volume = {},
-pages = {},
-location = {London, UK},
-award = {},
-number = {},
-address = {},
-},
-</pre></div></div></li><li class="2020 publication conference" title="2020"><strong>[C2]</strong> <strong>"Benchmarking Machine Learning Workloads in Structural Bioinformatics Applications"</strong>,  Ma, Heng and Clyde, Austin and Trifan, Anda and Vishwanath, Venkatram and Ramanathan, Arvind and Bhowmik, Debsindhu and Jha, Shantenu, <b>First International Workshop on  Benchmarking Machine Learning Workloads on Emerging Hardware</b> <strong>2020</strong>.&nbsp;<a href="#bibtex-19" title="Bibtex Citation" id="publink-19"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-19"><pre>@inproceedings{ma2020benchmarking,
-title={Benchmarking Machine Learning Workloads in Structural Bioinformatics Applications},
-author={Ma, Heng and Clyde, Austin and Trifan, Anda and Vishwanath, Venkatram and Ramanathan, Arvind and Bhowmik, Debsindhu and Jha, Shantenu},
-booktitle={First International Workshop on  Benchmarking Machine Learning Workloads on Emerging Hardware},
-year={2020},
-type={conference},
-journal={},
-volume={},
-number={},
-pages={}
-},
-</pre></div></div></li><li class="2020 publication conference" title="2020"><strong>[C1]</strong> <strong>"Virtual screening with deep learning using cancer cell line dose-response data"</strong>,  Clyde, Austin and Ramanathan, Arvind and Stevens, Rick, The American Association for Cancer Research,  pp. Opinion Pieces, <strong>2020</strong>.&nbsp;<a href="#bibtex-20" title="Bibtex Citation" id="publink-20"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-20"><pre>@article{clyde2020virtual,
-title={Virtual screening with deep learning using cancer cell line dose-response data},
-author={Clyde, Austin and Ramanathan, Arvind and Stevens, Rick},
-journal={Clinical Cancer Research},
-volume={26},
-number={12\_Supplement\_1},
-pages={36--36},
-year={2020},
-publisher={The American Association for Cancer Research},
-type={conference},
-journal={},
-volume={},
-number={},
-pages={}
-},
-Public Opinion Pieces
-</pre></div></div></li><li class="2022 book"><h2>Book Chapters</h2></li><li class="2022 publication book" title="2022"><strong>[B1]</strong> <strong>"<a href="https://link.springer.com/protocol/10.1007/978-1-0716-1787-8_13" class="publications-title" target="_blank">Ultrahigh Throughput Protein--Ligand Docking with Deep Learning</a>"</strong>,  Clyde, Austin, <b>Artificial Intelligence in Drug Design</b> Humana, New York, NY,  pp. 301--319,  DOI: <a class="publications-title" target="blank" href="https://doi.org/https://doi.org/10.1016/j.patter.2022.100446">https://doi.org/10.1016/j.patter.2022.100446</a>,&nbsp;<strong>2022</strong>.&nbsp;<a href="#bibtex-21" title="Bibtex Citation" id="publink-21"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-21"><pre>@incollection{clyde2022ultrahigh,
-title={Ultrahigh Throughput Protein--Ligand Docking with Deep Learning},
-author={Clyde, Austin},
-booktitle={Artificial Intelligence in Drug Design},
-pages={301--319},
-year={2022},
-publisher={Humana, New York, NY},
-type={book},
-doi={https://doi.org/10.1016/j.patter.2022.100446},
-durl={https://link.springer.com/protocol/10.1007/978-1-0716-1787-8_13}
-},
-Conference
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://link.springer.com/protocol/10.1007/978-1-0716-1787-8_13"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2022 editorial"><h2>Editorials</h2></li><li class="2022 publication editorial" title="2022"><strong>[E3]</strong> <strong>"<a href="https://doi.org/https://doi.org/10.1016/j.patter.2022.100446" class="publications-title" target="_blank">AI for science and global citizens</a>"</strong>,  Clyde, Austin, Elsevier,  Vol. 3,  pp. 100446,  DOI: <a class="publications-title" target="blank" href="https://doi.org/https://doi.org/10.1016/j.patter.2022.100446">https://doi.org/10.1016/j.patter.2022.100446</a>,&nbsp;<strong>2022</strong>.&nbsp;<a href="#bibtex-22" title="Bibtex Citation" id="publink-22"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-22"><pre>@article{clyde2022ai,
-title={AI for science and global citizens},
-author={Clyde, Austin},
-journal={Patterns},
-volume={3},
-number={2},
-pages={100446},
-year={2022},
-publisher={Elsevier}
-type={editorial},
-doi={https://doi.org/10.1016/j.patter.2022.100446},
-durl={https://doi.org/https://doi.org/10.1016/j.patter.2022.100446}
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://doi.org/https://doi.org/10.1016/j.patter.2022.100446"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2021 publication editorial" title="2021"><strong>[E2]</strong> <strong>"<a href="https://techpolicy.press/human-in-the-loop-systems-are-no-panacea-for-ai-accountability/" class="publications-title" target="_blank">Human-in-the-Loop Systems Are No Panacea for AI Accountability</a>"</strong>,  Clyde, Austin, Tech Policy Press, <strong>2021</strong>.&nbsp;<a href="#bibtex-23" title="Bibtex Citation" id="publink-23"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-23"><pre>@article{clyde2022ai2,
-title={Human-in-the-Loop Systems Are No Panacea for AI Accountability},
-author={Clyde, Austin},
-journal={},
-volume={},
-number={},
-pages={},
-year={2021},
-publisher={Tech Policy Press}
-type={editorial},
-durl={https://techpolicy.press/human-in-the-loop-systems-are-no-panacea-for-ai-accountability/}
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://techpolicy.press/human-in-the-loop-systems-are-no-panacea-for-ai-accountability/"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2022 publication editorial" title="2022"><strong>[E1]</strong> <strong>"<a href="https://techpolicy.press/algorithmic-systems-designed-to-reduce-polarization-could-hurt-democracy-not-help-it/" class="publications-title" target="_blank">Algorithmic Systems Designed to Reduce Polarization Could Hurt Democracy, Not Help It</a>"</strong>,  Clyde, Austin, Tech Policy Press, <strong>2022</strong>.&nbsp;<a href="#bibtex-24" title="Bibtex Citation" id="publink-24"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-24"><pre>@article{clyde2022ai3,
-title={Algorithmic Systems Designed to Reduce Polarization Could Hurt Democracy, Not Help It},
-author={Clyde, Austin},
-journal={},
-volume={},
-number={},
-pages={},
-year={2022},
-publisher={Tech Policy Press}
-type={editorial},
-durl={https://techpolicy.press/algorithmic-systems-designed-to-reduce-polarization-could-hurt-democracy-not-help-it/}
-},
-Preprints
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://techpolicy.press/algorithmic-systems-designed-to-reduce-polarization-could-hurt-democracy-not-help-it/"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2022 preprint"><h2>Preprints</h2></li><li class="2022 publication preprint" title="2022"><strong>[P4]</strong> <strong>"<a href="https://www.biorxiv.org/content/biorxiv/early/2022/10/11/2022.10.10.511571.full.pdf" class="publications-title" target="_blank">GenSLMs: Genome-scale language models reveal SARS-CoV-2 evolutionary dynamics.</a>"</strong>,  Zvyagin, Max T and Brace, Alexander and Hippe, Kyle and Deng, Yuntian and Zhang, Bin and Bohorquez, Cindy Orozco and Clyde, Austin and Kale, Bharat and Perez-Rivera, Danilo and Ma, Heng and others, Cold Spring Harbor Laboratory,  DOI: <a class="publications-title" target="blank" href="https://doi.org/https://doi.org/10.1101/2022.10.10.511571">https://doi.org/10.1101/2022.10.10.511571</a>,&nbsp;<strong>2022</strong>.&nbsp;<a href="#bibtex-25" title="Bibtex Citation" id="publink-25"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-25"><pre>@article{zvyagin2022genslms,
-title={GenSLMs: Genome-scale language models reveal SARS-CoV-2 evolutionary dynamics.},
-author={Zvyagin, Max T and Brace, Alexander and Hippe, Kyle and Deng, Yuntian and Zhang, Bin and Bohorquez, Cindy Orozco and Clyde, Austin and Kale, Bharat and Perez-Rivera, Danilo and Ma, Heng and others},
-journal={bioRxiv},
-year={2022},
-publisher={Cold Spring Harbor Laboratory},
-type={preprint},
-doi={https://doi.org/10.1101/2022.10.10.511571},
-durl = {https://www.biorxiv.org/content/biorxiv/early/2022/10/11/2022.10.10.511571.full.pdf},
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://www.biorxiv.org/content/biorxiv/early/2022/10/11/2022.10.10.511571.full.pdf"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2021 publication preprint" title="2021"><strong>[P3]</strong> <strong>"<a href="https://www.biorxiv.org/content/10.1101/2020.10.29.339317v2?lngen" class="publications-title" target="_blank">Open science discovery of oral non-covalent SARS-CoV-2 main protease inhibitor therapeutics</a>"</strong>,  Achdout, Hagit and Aimon, Anthony and Bar-David, Elad and Barr, Haim and Ben-Shmuel, Amir and Bennett, James and Boby, Melissa L and Borden, Bruce and Bowman, Gregory R and Brun, Juliane and others, (<strong></strong>), Cold Spring Harbor Laboratory,  pp. 2020--10,  DOI: <a class="publications-title" target="blank" href="https://doi.org/https://doi.org/10.1101/2020.10.29.339317">https://doi.org/10.1101/2020.10.29.339317</a>,&nbsp;<strong>2021</strong>.&nbsp;<a href="#bibtex-26" title="Bibtex Citation" id="publink-26"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-26"><pre>@article{achdout2021open,
-title={Open science discovery of oral non-covalent SARS-CoV-2 main protease inhibitor therapeutics},
-author={Achdout, Hagit and Aimon, Anthony and Bar-David, Elad and Barr, Haim and Ben-Shmuel, Amir and Bennett, James and Boby, Melissa L and Borden, Bruce and Bowman, Gregory R and Brun, Juliane and others},
-journal={bioRxiv},
-pages={2020--10},
-year={2021},
-publisher={Cold Spring Harbor Laboratory},
-type={preprint},
-series={},
-durl={https://www.biorxiv.org/content/10.1101/2020.10.29.339317v2?lng=en},
-doi={https://doi.org/10.1101/2020.10.29.339317}
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://www.biorxiv.org/content/10.1101/2020.10.29.339317v2?lngen"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2020 publication preprint" title="2020"><strong>[P2]</strong> <strong>"<a href="https://arxiv.org/pdf/2006.01171.pdf" class="publications-title" target="_blank">Regression enrichment surfaces: a simple analysis technique for virtual drug screening models</a>"</strong>,  Clyde, Austin and Duan, Xiaotian and Stevens, Rick, <strong>2020</strong>.&nbsp;<a href="#bibtex-27" title="Bibtex Citation" id="publink-27"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-27"><pre>@article{clyde2020regression,
-title={Regression enrichment surfaces: a simple analysis technique for virtual drug screening models},
-author={Clyde, Austin and Duan, Xiaotian and Stevens, Rick},
-journal={arXiv preprint arXiv:2006.01171},
-year={2020},
-type={preprint},
-durl={https://arxiv.org/pdf/2006.01171.pdf}
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://arxiv.org/pdf/2006.01171.pdf"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li><li class="2020 publication preprint" title="2020"><strong>[P1]</strong> <strong>"<a href="https://arxiv.org/pdf/2005.00095.pdf" class="publications-title" target="_blank">A systematic approach to featurization for cancer drug sensitivity predictions with deep learning</a>"</strong>,  Clyde, Austin and Brettin, Tom and Partin, Alexander and Shaulik, Maulik and Yoo, Hyunseung and Evrard, Yvonne and Zhu, Yitan and Xia, Fangfang and Stevens, Rick, preprint, <strong>2020</strong>.&nbsp;<a href="#bibtex-28" title="Bibtex Citation" id="publink-28"><i class="fa fa-bold">&nbsp;</i></a><div style="display:none"><div id="bibtex-28"><pre>@article{clyde2020systematic,
-title={A systematic approach to featurization for cancer drug sensitivity predictions with deep learning},
-author={Clyde, Austin and Brettin, Tom and Partin, Alexander and Shaulik, Maulik and Yoo, Hyunseung and Evrard, Yvonne and Zhu, Yitan and Xia, Fangfang and Stevens, Rick},
-journal={arXiv preprint arXiv:2005.00095},
-publisher = {preprint},
-year={2020},
-type={preprint},
-durl = {https://arxiv.org/pdf/2005.00095.pdf},
-},
-</pre></div></div><a target="_blank" title="PDF" class="publications-title" href="https://arxiv.org/pdf/2005.00095.pdf"><i class="fa fa-file-pdf-o">&nbsp;</i></a></li></ul><center><small>Automatically generated from this <a href="demo.bib" target="_blank" >bibtex</a> using the <a target=_blank href="http://dmsl.github.com/smartbib/">Smartbib</a> project</small></center></body>
+  <main id="main">
+    <section class="page-hero compact">
+      <div class="copy-stack">
+        <p class="section-label">Publication archive</p>
+        <h1>Publications, datasets, and public writing.</h1>
+        <p class="lead">Generated from structured site data and checked against OpenAlex author records for Austin Clyde.</p>
+      </div>
+      <div class="metric-strip" aria-label="Publication summary">
+        <div><strong>45</strong><span>curated records</span></div>
+        <div><strong>53</strong><span>OpenAlex works</span></div>
+        <div><strong>19</strong><span>OpenAlex h-index</span></div>
+      </div>
+    </section>
+
+    <section class="content-band archive-featured">
+      <div class="archive-featured-head">
+        <div>
+          <p class="section-label">Featured work</p>
+          <h2>Representative research and public writing.</h2>
+        </div>
+        <p>Curated from the same structured records used for the full archive below.</p>
+      </div>
+      <div class="archive-featured-grid">
+
+        <article class="archive-featured-card">
+          <h3><a href="https://doi.org/10.1038/s41598-023-28785-9">AI-accelerated protein-ligand docking for SARS-CoV-2 is 100-fold faster with no significant change in detection</a></h3>
+          <p>Article in Scientific Reports.</p>
+          <div class="featured-meta">
+            <span>2023</span>
+            <span>Scientific Reports</span>
+            <span>30 citations</span>
+          </div>
+        </article>
+
+        <article class="archive-featured-card">
+          <h3><a href="https://doi.org/10.1177/10943420231201154">GenSLMs: Genome-scale language models reveal SARS-CoV-2 evolutionary dynamics</a></h3>
+          <p>Genome-scale language models for SARS-CoV-2 evolutionary dynamics, recognized with the 2022 ACM Gordon Bell Special Prize.</p>
+          <div class="featured-meta">
+            <span>2023</span>
+            <span>The International Journal of High Performance Computing Applications</span>
+            <span>ACM Gordon Bell Special Prize 2022</span>
+            <span>81 citations</span>
+          </div>
+        </article>
+
+        <article class="archive-featured-card">
+          <h3><a href="https://doi.org/10.1142/9789811265679_0034">Large Language Models for Science</a></h3>
+          <p>Book chapter in Artificial Intelligence for Science.</p>
+          <div class="featured-meta">
+            <span>2023</span>
+            <span>Artificial Intelligence for Science</span>
+            <span>2 citations</span>
+          </div>
+        </article>
+
+        <article class="archive-featured-card">
+          <h3><a href="https://doi.org/10.1111/cgf.14807">ChemoGraph: Interactive Visual Exploration of the Chemical Space</a></h3>
+          <p>Article in Computer Graphics Forum.</p>
+          <div class="featured-meta">
+            <span>2023</span>
+            <span>Computer Graphics Forum</span>
+            <span>7 citations</span>
+          </div>
+        </article>
+
+        <article class="archive-featured-card">
+          <h3><a href="https://doi.org/10.1016/j.patter.2022.100446">AI for science and global citizens</a></h3>
+          <p>Article in Patterns.</p>
+          <div class="featured-meta">
+            <span>2022</span>
+            <span>Patterns</span>
+            <span>8 citations</span>
+          </div>
+        </article>
+
+        <article class="archive-featured-card">
+          <h3><a href="https://doi.org/10.1177/10943420211006452">AI-driven multiscale simulations illuminate mechanisms of SARS-CoV-2 spike dynamics</a></h3>
+          <p>Article in The International Journal of High Performance Computing Applications.</p>
+          <div class="featured-meta">
+            <span>2021</span>
+            <span>The International Journal of High Performance Computing Applications</span>
+            <span>ACM Gordon Bell Special Prize 2020</span>
+            <span>184 citations</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <div class="tool-row">
+        <div class="filters" aria-label="Publication filters">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+              <button class="filter-button" type="button" data-filter="articles">Peer-reviewed articles</button>
+              <button class="filter-button" type="button" data-filter="conference">Conference proceedings</button>
+              <button class="filter-button" type="button" data-filter="book-chapters">Book chapters</button>
+              <button class="filter-button" type="button" data-filter="workshops">Workshops</button>
+              <button class="filter-button" type="button" data-filter="preprints">Preprints</button>
+              <button class="filter-button" type="button" data-filter="datasets">Datasets</button>
+              <button class="filter-button" type="button" data-filter="essays">Essays and public writing</button>
+              <button class="filter-button" type="button" data-filter="public-comments">Public comments</button>
+              <button class="filter-button" type="button" data-filter="patents">Patents</button>
+              <button class="filter-button" type="button" data-filter="dissertation">Dissertation</button>
+        </div>
+        <label class="search-field">
+          <span>Search</span>
+          <input type="search" id="publication-search" placeholder="Title, author, venue">
+        </label>
+      </div>
+      <p class="data-note">Last generated 2026-06-11. Primary source: <a href="https://openalex.org/A5088879250">OpenAlex author profile</a>. Manual additions cover public essays, public comments, and patents not indexed as standard scholarly works.</p>
+      <div class="publication-list" id="publication-list">
+
+          <article class="publication-item preprints year-2024" data-category="preprints" data-year="2024" data-title="assessing reusability of deep learning-based monotherapy drug response prediction models trained with omics data">
+            <div class="pub-year">2024</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.48550/arxiv.2409.12215">Assessing Reusability of Deep Learning-Based Monotherapy Drug Response Prediction Models Trained with Omics Data</a></h2>
+              <p class="pub-meta">Jamie Overbeek, Alexander Partin, Thomas Brettin, Nicholas Chia, Oleksandr Narykov, Priyanka Vasanthakumari, et al.</p>
+              <p class="pub-source">Preprints · arXiv (Cornell University)</p>
+              <div class="pub-actions"><a href="https://doi.org/10.48550/arxiv.2409.12215">DOI</a><a href="https://arxiv.org/pdf/2409.12215">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item datasets year-2024" data-category="datasets" data-year="2024" data-title="mcule database">
+            <div class="pub-year">2024</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.57702/e42dvhxm">Mcule database</a></h2>
+              <p class="pub-meta">Austin Clyde</p>
+              <p class="pub-source">Datasets · TIB Data Manager</p>
+              <div class="pub-actions"><a href="https://doi.org/10.57702/e42dvhxm">DOI</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item datasets year-2024" data-category="datasets" data-year="2024" data-title="scaffolds as classes over drug-like chemical space">
+            <div class="pub-year">2024</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.57702/kskrs7b7">Scaffolds as classes over drug-like chemical space</a></h2>
+              <p class="pub-meta">Austin Clyde</p>
+              <p class="pub-source">Datasets · TIB Data Manager</p>
+              <div class="pub-actions"><a href="https://doi.org/10.57702/kskrs7b7">DOI</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2023" data-category="articles" data-year="2023" data-title="ai-accelerated design of targeted covalent inhibitors for sars-cov-2">
+            <div class="pub-year">2023</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1021/acs.jcim.2c01377">AI-Accelerated Design of Targeted Covalent Inhibitors for SARS-CoV-2</a></h2>
+              <p class="pub-meta">Rajendra P. Joshi, Katherine Schultz, Jesse Wilson, Agustin Kruel, Rohith Varikoti, Chathuri J. Kombala, et al.</p>
+              <p class="pub-source">Peer-reviewed articles · Journal of Chemical Information and Modeling</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1021/acs.jcim.2c01377">DOI</a><a href="https://www.osti.gov/servlets/purl/1961968">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2023" data-category="articles" data-year="2023" data-title="ai-accelerated protein-ligand docking for sars-cov-2 is 100-fold faster with no significant change in detection">
+            <div class="pub-year">2023</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1038/s41598-023-28785-9">AI-accelerated protein-ligand docking for SARS-CoV-2 is 100-fold faster with no significant change in detection</a></h2>
+              <p class="pub-meta">Austin Clyde, Xuefeng Liu, Thomas Brettin, Hyunseung Yoo, Alexander Partin, Yadu Babuji, et al.</p>
+              <p class="pub-source">Peer-reviewed articles · Scientific Reports</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1038/s41598-023-28785-9">DOI</a><a href="https://www.nature.com/articles/s41598-023-28785-9.pdf">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2023" data-category="articles" data-year="2023" data-title="chemograph: interactive visual exploration of the chemical space">
+            <div class="pub-year">2023</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1111/cgf.14807">ChemoGraph: Interactive Visual Exploration of the Chemical Space</a></h2>
+              <p class="pub-meta">Bharat Kale, Austin Clyde, Maoyuan Sun, Arvind Ramanathan, Rick Stevens, Michael E. Papka</p>
+              <p class="pub-source">Peer-reviewed articles · Computer Graphics Forum</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1111/cgf.14807">DOI</a><a href="https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/cgf.14807">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2023" data-category="articles" data-year="2023" data-title="deep learning methods for drug response prediction in cancer: predominant and emerging trends">
+            <div class="pub-year">2023</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.3389/fmed.2023.1086097">Deep learning methods for drug response prediction in cancer: Predominant and emerging trends</a></h2>
+              <p class="pub-meta">Alexander Partin, Thomas Brettin, Yitan Zhu, Oleksandr Narykov, Austin Clyde, Jamie Overbeek, Rick Stevens</p>
+              <p class="pub-source">Peer-reviewed articles · Frontiers in Medicine</p>
+              <div class="pub-actions"><a href="https://doi.org/10.3389/fmed.2023.1086097">DOI</a><a href="https://www.frontiersin.org/articles/10.3389/fmed.2023.1086097/pdf">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2023" data-category="articles" data-year="2023" data-title="genslms: genome-scale language models reveal sars-cov-2 evolutionary dynamics">
+            <div class="pub-year">2023</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1177/10943420231201154">GenSLMs: Genome-scale language models reveal SARS-CoV-2 evolutionary dynamics</a></h2>
+              <p class="pub-meta">Maxim Zvyagin, Alexander Brace, Kyle Hippe, Yuntian Deng, Bin Zhang, Cindy Orozco Bohorquez, et al.</p>
+              <p class="pub-source">Peer-reviewed articles · The International Journal of High Performance Computing Applications</p>
+              <p class="pub-summary">Genome-scale language models for SARS-CoV-2 evolutionary dynamics, recognized with the 2022 ACM Gordon Bell Special Prize.</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1177/10943420231201154">DOI</a><a href="https://www.osti.gov/servlets/purl/2563710">Open copy</a><span class="pub-award">ACM Gordon Bell Special Prize 2022</span></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2023" data-category="articles" data-year="2023" data-title="integration of computational docking into anti-cancer drug response prediction models">
+            <div class="pub-year">2023</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.3390/cancers16010050">Integration of Computational Docking into Anti-Cancer Drug Response Prediction Models</a></h2>
+              <p class="pub-meta">Oleksandr Narykov, Yitan Zhu, Thomas Brettin, Yvonne A. Evrard, Alexander Partin, Maulik Shukla, et al.</p>
+              <p class="pub-source">Peer-reviewed articles · Cancers</p>
+              <div class="pub-actions"><a href="https://doi.org/10.3390/cancers16010050">DOI</a><a href="https://www.mdpi.com/2072-6694/16/1/50/pdf?version=1703152271">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2023" data-category="articles" data-year="2023" data-title="open science discovery of potent noncovalent sars-cov-2 main protease inhibitors">
+            <div class="pub-year">2023</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1126/science.abo7201">Open science discovery of potent noncovalent SARS-CoV-2 main protease inhibitors</a></h2>
+              <p class="pub-meta">Melissa L. Boby, D. Fearon, Matteo P. Ferla, Mihajlo Filep, L. Koekemoer, Matthew C. Robinson, et al.</p>
+              <p class="pub-source">Peer-reviewed articles · Science</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1126/science.abo7201">DOI</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item conference year-2023" data-category="conference" data-year="2023" data-title="abstract 5380: systematic evaluation and comparison of drug response prediction models: a case study of prediction generalization across cell lines datasets">
+            <div class="pub-year">2023</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1158/1538-7445.am2023-5380">Abstract 5380: Systematic evaluation and comparison of drug response prediction models: a case study of prediction generalization across cell lines datasets</a></h2>
+              <p class="pub-meta">Alexander Partin, Thomas Brettin, Yitan Zhu, Jamie Overbeek, Oleksandr Narykov, Priyanka Vasanthakumari, et al.</p>
+              <p class="pub-source">Conference proceedings · American Association for Cancer Research Annual Meeting</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1158/1538-7445.am2023-5380">DOI</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item conference year-2023" data-category="conference" data-year="2023" data-title="transferable graph neural fingerprint models for quick response to future bio-threats">
+            <div class="pub-year">2023</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1109/icmla58977.2023.00117">Transferable Graph Neural Fingerprint Models for Quick Response to Future Bio-Threats</a></h2>
+              <p class="pub-meta">Wei Chen, Yihui Ren, Ai Kagawa, Matthew R. Carbone, Samuel Yen-Chi Chen, Xiaohui Qu, et al.</p>
+              <p class="pub-source">Conference proceedings · International Conference on Machine Learning and Applications (ICMLA)</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1109/icmla58977.2023.00117">DOI</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item book-chapters year-2023" data-category="book-chapters" data-year="2023" data-title="large language models for science">
+            <div class="pub-year">2023</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1142/9789811265679_0034">Large Language Models for Science</a></h2>
+              <p class="pub-meta">Austin Clyde, Arvind Ramanathan, Rick Stevens</p>
+              <p class="pub-source">Book chapters · Artificial Intelligence for Science</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1142/9789811265679_0034">DOI</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item preprints year-2023" data-category="preprints" data-year="2023" data-title="deepspeed4science initiative: enabling large-scale scientific discovery through sophisticated ai system technologies">
+            <div class="pub-year">2023</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.48550/arxiv.2310.04610">DeepSpeed4Science Initiative: Enabling Large-Scale Scientific Discovery through Sophisticated AI System Technologies</a></h2>
+              <p class="pub-meta">Shuaiwen Leon Song, Bonnie Kruft, Minjia Zhang, Conglong Li, Shiyang Chen, Chengming Zhang, et al.</p>
+              <p class="pub-source">Preprints · arXiv (Cornell University)</p>
+              <div class="pub-actions"><a href="https://doi.org/10.48550/arxiv.2310.04610">DOI</a><a href="https://arxiv.org/pdf/2310.04610">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2022" data-category="articles" data-year="2022" data-title="#covidisairborne: ai-enabled multiscale computational microscopy of delta sars-cov-2 in a respiratory aerosol">
+            <div class="pub-year">2022</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1177/10943420221128233">#COVIDisAirborne: AI-enabled multiscale computational microscopy of delta SARS-CoV-2 in a respiratory aerosol</a></h2>
+              <p class="pub-meta">Abigail C. Dommer, Lorenzo Casalino, Fiona L. Kearns, Mia A. Rosenfeld, Nicholas Wauer, Surl-Hee Ahn, et al.</p>
+              <p class="pub-source">Peer-reviewed articles · The International Journal of High Performance Computing Applications</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1177/10943420221128233">DOI</a><span class="pub-award">ACM Gordon Bell Special Prize finalist 2021</span></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2022" data-category="articles" data-year="2022" data-title="ai for science and global citizens">
+            <div class="pub-year">2022</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1016/j.patter.2022.100446">AI for science and global citizens</a></h2>
+              <p class="pub-meta">Austin Clyde</p>
+              <p class="pub-source">Peer-reviewed articles · Patterns</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1016/j.patter.2022.100446">DOI</a><a href="http://www.cell.com/article/S2666389922000198/pdf">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2022" data-category="articles" data-year="2022" data-title="intelligent resolution: integrating cryo-em with ai-driven multi-resolution simulations to observe the severe acute respiratory syndrome coronavirus-2 replication-transcription machinery in action">
+            <div class="pub-year">2022</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1177/10943420221113513">Intelligent resolution: Integrating Cryo-EM with AI-driven multi-resolution simulations to observe the severe acute respiratory syndrome coronavirus-2 replication-transcription machinery in action</a></h2>
+              <p class="pub-meta">Anda Trifan, Defne Gorgun, Michael Salim, Zongyi Li, Alexander Brace, Maxim Zvyagin, et al.</p>
+              <p class="pub-source">Peer-reviewed articles · The International Journal of High Performance Computing Applications</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1177/10943420221113513">DOI</a><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10923581/pdf/nihms-1895248.pdf">Open copy</a><span class="pub-award">ACM Gordon Bell Special Prize finalist 2021</span></div>
+            </div>
+          </article>
+
+          <article class="publication-item book-chapters year-2022" data-category="book-chapters" data-year="2022" data-title="ultrahigh throughput protein–ligand docking with deep learning">
+            <div class="pub-year">2022</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1007/978-1-0716-1787-8_13">Ultrahigh Throughput Protein–Ligand Docking with Deep Learning</a></h2>
+              <p class="pub-meta">Austin Clyde</p>
+              <p class="pub-source">Book chapters · Artificial Intelligence in Drug Design / Methods in Molecular Biology</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1007/978-1-0716-1787-8_13">DOI</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item workshops year-2022" data-category="workshops" data-year="2022" data-title="deep surrogate docking: accelerating automated drug discovery with graph neural networks">
+            <div class="pub-year">2022</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.48550/arxiv.2211.02720">Deep Surrogate Docking: Accelerating Automated Drug Discovery with Graph Neural Networks</a></h2>
+              <p class="pub-meta">Ryien Hosseini, Filippo Simini, Austin Clyde, Arvind Ramanathan</p>
+              <p class="pub-source">Workshops · NeurIPS Workshop on AI for Science</p>
+              <div class="pub-actions"><a href="https://doi.org/10.48550/arxiv.2211.02720">DOI</a><a href="https://arxiv.org/pdf/2211.02720">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item essays year-2022" data-category="essays" data-year="2022" data-title="algorithmic systems designed to reduce polarization could hurt democracy, not help it">
+            <div class="pub-year">2022</div>
+            <div class="pub-body">
+              <h2><a href="https://www.techpolicy.press/algorithmic-systems-designed-to-reduce-polarization-could-hurt-democracy-not-help-it/">Algorithmic Systems Designed to Reduce Polarization Could Hurt Democracy, Not Help It</a></h2>
+              <p class="pub-meta">Austin Clyde</p>
+              <p class="pub-source">Essays and public writing · Tech Policy Press</p>
+              <p class="pub-summary">A critique of bridging-based recommender systems and the politics of optimizing civic discourse.</p>
+              <div class="pub-actions"><a href="https://www.techpolicy.press/algorithmic-systems-designed-to-reduce-polarization-could-hurt-democracy-not-help-it/">Open</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item essays year-2022" data-category="essays" data-year="2022" data-title="are social media platforms a legitimate component of democracy?">
+            <div class="pub-year">2022</div>
+            <div class="pub-body">
+              <h2><a href="https://www.techpolicy.press/are-social-media-platforms-a-legitimate-component-of-democracy/">Are Social Media Platforms a Legitimate Component of Democracy?</a></h2>
+              <p class="pub-meta">Austin Clyde</p>
+              <p class="pub-source">Essays and public writing · Tech Policy Press</p>
+              <p class="pub-summary">An essay on platform power, legitimacy, and social media as a democratic public sphere.</p>
+              <div class="pub-actions"><a href="https://www.techpolicy.press/are-social-media-platforms-a-legitimate-component-of-democracy/">Open</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item public-comments year-2022" data-category="public-comments" data-year="2022" data-title="equitable data engagement and accountability (87 fr 54269)">
+            <div class="pub-year">2022</div>
+            <div class="pub-body">
+              <h2><a href="https://bidenwhitehouse.archives.gov/wp-content/uploads/2023/10/Responses-Request-for-Information-Equitable-Data-Engagement-and-Accountability.pdf">Equitable Data Engagement and Accountability (87 FR 54269)</a></h2>
+              <p class="pub-meta">Austin Clyde, Aishani Aatresh</p>
+              <p class="pub-source">Public comments · White House Office of Science and Technology Policy</p>
+              <p class="pub-summary">Public comment on equitable public data, accountability, usability, and civic engagement.</p>
+              <div class="pub-actions"><a href="https://bidenwhitehouse.archives.gov/wp-content/uploads/2023/10/Responses-Request-for-Information-Equitable-Data-Engagement-and-Accountability.pdf">Open</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item patents year-2022" data-category="patents" data-year="2022" data-title="systems and methods for reinforcement learning molecular modeling">
+            <div class="pub-year">2022</div>
+            <div class="pub-body">
+              <h2><a href="https://patents.google.com/patent/US20220351808A1/en">Systems and methods for reinforcement learning molecular modeling</a></h2>
+              <p class="pub-meta">Austin Clyde, Arvind Ramanathan, Rick Stevens</p>
+              <p class="pub-source">Patents · US Patent Application US20220351808A1</p>
+              <p class="pub-summary">Patent application for reinforcement-learning workflows for molecular modeling.</p>
+              <div class="pub-actions"><a href="https://patents.google.com/patent/US20220351808A1/en">Open</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item dissertation year-2022" data-category="dissertation" data-year="2022" data-title="artificial intelligence and high-performance computing for accelerating structure-based drug discovery">
+            <div class="pub-year">2022</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.6082/nn4xg-wny02">Artificial Intelligence and High-Performance Computing for Accelerating Structure-Based Drug Discovery</a></h2>
+              <p class="pub-meta">Austin Robert Clyde</p>
+              <p class="pub-source">Dissertation · University of Chicago</p>
+              <div class="pub-actions"><a href="https://doi.org/10.6082/nn4xg-wny02">DOI</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2021" data-category="articles" data-year="2021" data-title="a cross-study analysis of drug response prediction in cancer cell lines">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1093/bib/bbab356">A cross-study analysis of drug response prediction in cancer cell lines</a></h2>
+              <p class="pub-meta">Fangfang Xia, Jonathan Allen, Prasanna Balaprakash, Thomas Brettin, Cristina García–Cardona, Austin Clyde, et al.</p>
+              <p class="pub-source">Peer-reviewed articles · Briefings in Bioinformatics</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1093/bib/bbab356">DOI</a><a href="https://academic.oup.com/bib/article-pdf/23/1/bbab356/42229862/bbab356.pdf">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2021" data-category="articles" data-year="2021" data-title="ai-driven multiscale simulations illuminate mechanisms of sars-cov-2 spike dynamics">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1177/10943420211006452">AI-driven multiscale simulations illuminate mechanisms of SARS-CoV-2 spike dynamics</a></h2>
+              <p class="pub-meta">Lorenzo Casalino, Abigail C. Dommer, Zied Gaieb, Emília P. Barros, Terra Sztain, Surl-Hee Ahn, et al.</p>
+              <p class="pub-source">Peer-reviewed articles · The International Journal of High Performance Computing Applications</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1177/10943420211006452">DOI</a><span class="pub-award">ACM Gordon Bell Special Prize 2020</span></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2021" data-category="articles" data-year="2021" data-title="high-throughput virtual screening and validation of a sars-cov-2 main protease noncovalent inhibitor">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1021/acs.jcim.1c00851">High-Throughput Virtual Screening and Validation of a SARS-CoV-2 Main Protease Noncovalent Inhibitor</a></h2>
+              <p class="pub-meta">Austin Clyde, Stephanie Galanie, Daniel W. Kneller, Heng Ma, Yadu Babuji, Ben Blaiszik, et al.</p>
+              <p class="pub-source">Peer-reviewed articles · Journal of Chemical Information and Modeling</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1021/acs.jcim.1c00851">DOI</a><a href="http://knowledge.uchicago.edu/record/13348">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2021" data-category="articles" data-year="2021" data-title="sars-cov-2 infects the human kidney and drives fibrosis in kidney organoids">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1016/j.stem.2021.12.010">SARS-CoV-2 infects the human kidney and drives fibrosis in kidney organoids</a></h2>
+              <p class="pub-meta">Jitske Jansen, Katharina C. Reimer, James S. Nagai, Finny S. Varghese, Gijs J. Overheul, Marit de Beer, et al.</p>
+              <p class="pub-source">Peer-reviewed articles · Cell stem cell</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1016/j.stem.2021.12.010">DOI</a><a href="http://www.cell.com/article/S1934590921005208/pdf">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2021" data-category="articles" data-year="2021" data-title="structural, electronic, and electrostatic determinants for inhibitor binding to subsites s1 and s2 in sars-cov-2 main protease">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1021/acs.jmedchem.1c01475">Structural, Electronic, and Electrostatic Determinants for Inhibitor Binding to Subsites S1 and S2 in SARS-CoV-2 Main Protease</a></h2>
+              <p class="pub-meta">Daniel W. Kneller, Hui Li, Stephanie Galanie, G.N. Phillips, Audrey Labbé, Kevin L. Weiss, et al.</p>
+              <p class="pub-source">Peer-reviewed articles · Journal of Medicinal Chemistry</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1021/acs.jmedchem.1c01475">DOI</a><a href="https://www.osti.gov/biblio/1836442">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item conference year-2021" data-category="conference" data-year="2021" data-title="impeccable: integrated modeling pipeline for covid cure by assessing better leads">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1145/3472456.3473524">IMPECCABLE: Integrated Modeling PipelinE for COVID Cure by Assessing Better LEads</a></h2>
+              <p class="pub-meta">Aymen Al Saadi, Dario Alfè, Yadu Babuji, Agastya P. Bhati, Ben Blaiszik, Alexander Brace, et al.</p>
+              <p class="pub-source">Conference proceedings · International Conference on Parallel Processing (ICPP)</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1145/3472456.3473524">DOI</a><a href="https://www.osti.gov/servlets/purl/1842794">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item conference year-2021" data-category="conference" data-year="2021" data-title="learning curves for drug response prediction in cancer cell lines">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1186/s12859-021-04163-y">Learning curves for drug response prediction in cancer cell lines</a></h2>
+              <p class="pub-meta">Alexander Partin, Thomas Brettin, Yvonne A. Evrard, Yitan Zhu, Hyunseung Yoo, Fangfang Xia, et al.</p>
+              <p class="pub-source">Conference proceedings · BMC Bioinformatics</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1186/s12859-021-04163-y">DOI</a><a href="https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-021-04163-y">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item conference year-2021" data-category="conference" data-year="2021" data-title="pandemic drugs at pandemic speed: infrastructure for accelerating covid-19 drug discovery with hybrid machine learning- and physics-based simulations on high-performance computers">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1098/rsfs.2021.0018">Pandemic drugs at pandemic speed: infrastructure for accelerating COVID-19 drug discovery with hybrid machine learning- and physics-based simulations on high-performance computers</a></h2>
+              <p class="pub-meta">Agastya P. Bhati, Shunzhou Wan, Dario Alfè, Austin Clyde, Mathis Bode, Li Lynn Tan, et al.</p>
+              <p class="pub-source">Conference proceedings · Interface Focus</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1098/rsfs.2021.0018">DOI</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item conference year-2021" data-category="conference" data-year="2021" data-title="scalable hpc &amp; ai infrastructure for covid-19 therapeutics">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1145/3468267.3470573">Scalable HPC &amp; AI infrastructure for COVID-19 therapeutics</a></h2>
+              <p class="pub-meta">Hyungro Lee, André Merzky, Li Lynn Tan, Mikhail Titov, Matteo Turilli, Dario Alfè, et al.</p>
+              <p class="pub-source">Conference proceedings · Platform for Advanced Scientific Computing (PASC)</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1145/3468267.3470573">DOI</a><a href="https://www.osti.gov/biblio/1895213">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item conference year-2021" data-category="conference" data-year="2021" data-title="stream-ai-md: streaming ai-driven adaptive molecular simulations for heterogeneous computing platforms">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1145/3468267.3470578">Stream-AI-MD: Streaming AI-driven adaptive molecular simulations for heterogeneous computing platforms</a></h2>
+              <p class="pub-meta">Alexander Brace, Michael Salim, Vishal Subbiah, Heng Ma, Murali Emani, Anda Trifa, et al.</p>
+              <p class="pub-source">Conference proceedings · Platform for Advanced Scientific Computing (PASC)</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1145/3468267.3470578">DOI</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item workshops year-2021" data-category="workshops" data-year="2021" data-title="scaffold embeddings: learning the structure spanned by chemical fragments, scaffolds and compounds">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.48550/arxiv.2103.06867">Scaffold Embeddings: Learning the Structure Spanned by Chemical Fragments, Scaffolds and Compounds</a></h2>
+              <p class="pub-meta">Austin Clyde, Arvind Ramanathan, Rick Stevens</p>
+              <p class="pub-source">Workshops · NeurIPS Workshop on Learning Meaningful Representation of Life</p>
+              <div class="pub-actions"><a href="https://doi.org/10.48550/arxiv.2103.06867">DOI</a><a href="https://arxiv.org/pdf/2103.06867">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item preprints year-2021" data-category="preprints" data-year="2021" data-title="pandemic drugs at pandemic speed: accelerating covid-19 drug discovery with hybrid machine learning- and physics-based simulations on high performance computers.">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://openalex.org/W3134333760">Pandemic Drugs at Pandemic Speed: Accelerating COVID-19 Drug Discovery with Hybrid Machine Learning- and Physics-based Simulations on High Performance Computers.</a></h2>
+              <p class="pub-meta">Agastya P. Bhati, Shunzhou Wan, Dario Alfè, Austin Clyde, Mathis Bode, Li Lynn Tan, et al.</p>
+              <p class="pub-source">Preprints · arXiv (Cornell University)</p>
+              <div class="pub-actions"><a href="https://openalex.org/W3134333760">Open</a><a href="https://arxiv.org/abs/2103.02843">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item preprints year-2021" data-category="preprints" data-year="2021" data-title="protein-ligand docking surrogate models: a sars-cov-2 benchmark for deep learning accelerated virtual screening">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.48550/arxiv.2106.07036">Protein-Ligand Docking Surrogate Models: A SARS-CoV-2 Benchmark for Deep Learning Accelerated Virtual Screening</a></h2>
+              <p class="pub-meta">Austin Clyde, Thomas Brettin, Alexander Partin, Hyunseung Yoo, Yadu Babuji, Ben Blaiszik, et al.</p>
+              <p class="pub-source">Preprints · arXiv (Cornell University)</p>
+              <div class="pub-actions"><a href="https://doi.org/10.48550/arxiv.2106.07036">DOI</a><a href="https://arxiv.org/pdf/2106.07036">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item preprints year-2021" data-category="preprints" data-year="2021" data-title="scaffold-induced molecular graph (simg): effective graph sampling methods for high-throughput computational drug discovery">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.48550/arxiv.2109.05012">Scaffold-Induced Molecular Graph (SIMG): Effective Graph Sampling Methods for High-Throughput Computational Drug Discovery</a></h2>
+              <p class="pub-meta">Austin Clyde, Ashka Shah, Max Zvyagin, Arvind Ramanathan, Rick Stevens</p>
+              <p class="pub-source">Preprints · arXiv</p>
+              <div class="pub-actions"><a href="https://doi.org/10.48550/arxiv.2109.05012">DOI</a><a href="https://arxiv.org/pdf/2109.05012">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item preprints year-2021" data-category="preprints" data-year="2021" data-title="spatial graph attention and curiosity-driven policy for antiviral drug discovery">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.48550/arxiv.2106.02190">Spatial Graph Attention and Curiosity-driven Policy for Antiviral Drug Discovery</a></h2>
+              <p class="pub-meta">Yulun Wu, Mikaela Cashman, Nicholas Choma, Érica T. Prates, Verónica G. Melesse Vergara, Manesh Shah, et al.</p>
+              <p class="pub-source">Preprints · arXiv (Cornell University)</p>
+              <div class="pub-actions"><a href="https://doi.org/10.48550/arxiv.2106.02190">DOI</a><a href="https://arxiv.org/pdf/2106.02190">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item datasets year-2021" data-category="datasets" data-year="2021" data-title="protein-ligand docking surrogate models: sars-cov-2 benchmark for deep learningaccelerated virtual screening">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.6084/m9.figshare.14745234">Protein-Ligand Docking Surrogate Models: SARS-CoV-2 Benchmark for Deep LearningAccelerated Virtual Screening</a></h2>
+              <p class="pub-meta">Austin Clyde, Thomas Brettin, Yoo, Hyunseung, Partin, Alex, Yadu Babuji, André Merzky, et al.</p>
+              <p class="pub-source">Datasets · Figshare</p>
+              <div class="pub-actions"><a href="https://doi.org/10.6084/m9.figshare.14745234">DOI</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item essays year-2021" data-category="essays" data-year="2021" data-title="human-in-the-loop systems are no panacea for ai accountability">
+            <div class="pub-year">2021</div>
+            <div class="pub-body">
+              <h2><a href="https://www.techpolicy.press/human-in-the-loop-systems-are-no-panacea-for-ai-accountability/">Human-in-the-Loop Systems Are No Panacea for AI Accountability</a></h2>
+              <p class="pub-meta">Austin Clyde</p>
+              <p class="pub-source">Essays and public writing · Tech Policy Press</p>
+              <p class="pub-summary">An argument that human review alone cannot make high-risk automated decision systems accountable.</p>
+              <div class="pub-actions"><a href="https://www.techpolicy.press/human-in-the-loop-systems-are-no-panacea-for-ai-accountability/">Open</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item articles year-2020" data-category="articles" data-year="2020" data-title="abstract 36: virtual screening with deep learning using cancer cell line dose-response data">
+            <div class="pub-year">2020</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.1158/1557-3265.advprecmed20-36">Abstract 36: Virtual screening with deep learning using cancer cell line dose-response data</a></h2>
+              <p class="pub-meta">Austin Clyde, Arvind Ramanathan, Rick Stevens</p>
+              <p class="pub-source">Peer-reviewed articles · Clinical Cancer Research</p>
+              <div class="pub-actions"><a href="https://doi.org/10.1158/1557-3265.advprecmed20-36">DOI</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item preprints year-2020" data-category="preprints" data-year="2020" data-title="a systematic approach to featurization for cancer drug sensitivity predictions with deep learning">
+            <div class="pub-year">2020</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.48550/arxiv.2005.00095">A Systematic Approach to Featurization for Cancer Drug Sensitivity Predictions with Deep Learning</a></h2>
+              <p class="pub-meta">Austin Clyde, Tom Brettin, Alexander Partin, Maulik Shaulik, Hyunseung Yoo, Yvonne A. Evrard, et al.</p>
+              <p class="pub-source">Preprints · arXiv (Cornell University)</p>
+              <div class="pub-actions"><a href="https://doi.org/10.48550/arxiv.2005.00095">DOI</a><a href="https://arxiv.org/pdf/2005.00095">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item preprints year-2020" data-category="preprints" data-year="2020" data-title="regression enrichment surfaces: a simple analysis technique for virtual drug screening models">
+            <div class="pub-year">2020</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.48550/arxiv.2006.01171">Regression Enrichment Surfaces: a Simple Analysis Technique for Virtual Drug Screening Models</a></h2>
+              <p class="pub-meta">Austin Clyde, Xiaotian Duan, Rick Stevens</p>
+              <p class="pub-source">Preprints · arXiv (Cornell University)</p>
+              <div class="pub-actions"><a href="https://doi.org/10.48550/arxiv.2006.01171">DOI</a><a href="https://arxiv.org/pdf/2006.01171">Open copy</a></div>
+            </div>
+          </article>
+
+          <article class="publication-item preprints year-2020" data-category="preprints" data-year="2020" data-title="targeting sars-cov-2 with ai- and hpc-enabled lead generation: a first data release">
+            <div class="pub-year">2020</div>
+            <div class="pub-body">
+              <h2><a href="https://doi.org/10.48550/arxiv.2006.02431">Targeting SARS-CoV-2 with AI- and HPC-enabled Lead Generation: A First Data Release</a></h2>
+              <p class="pub-meta">Yadu Babuji, Ben Blaiszik, Tom Brettin, Kyle Chard, Ryan Chard, Austin Clyde, et al.</p>
+              <p class="pub-source">Preprints · arXiv (Cornell University)</p>
+              <div class="pub-actions"><a href="https://doi.org/10.48550/arxiv.2006.02431">DOI</a><a href="https://arxiv.org/pdf/2006.02431">Open copy</a></div>
+            </div>
+          </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Austin Clyde</strong>
+      <span>High-performance AI systems, scientific computing, and accountable AI.</span>
+    </div>
+    <a href="../">Back home</a>
+  </footer>
+  <script src="../js/site.js"></script>
+</body>
 </html>
